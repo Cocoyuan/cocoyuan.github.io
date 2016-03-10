@@ -103,12 +103,26 @@
 
 				}
 
-		// Main Sections: Two.
+		// Main Sections
 
 			// Lightbox gallery.
-				$('#two').poptrox({
+				$('#Portfolio').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (skel.isActive('small') ? 0 : 50)
+				});
+
+				$('#footer').poptrox({
+					caption: function($a){ return $a.next('').text();},
+					overlayColor:'#00000000',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
