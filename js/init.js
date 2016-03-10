@@ -120,19 +120,19 @@
 					windowMargin: (skel.isActive('small') ? 0 : 50)
 				});
 
-				$('#footer').poptrox({
-					caption: function($a){ return $a.next('').text();},
-					overlayColor:'#00000000',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (skel.isActive('small') ? 0 : 50)
-				});
+				// $('#footer').poptrox({
+				// 	caption: function($a){ return $a.next('').text();},
+				// 	overlayColor:'#00000000',
+				// 	overlayOpacity: 0.85,
+				// 	popupCloserText: '',
+				// 	popupLoaderText: '',
+				// 	selector: '.work-item a',
+				// 	usePopupCaption: true,
+				// 	usePopupDefaultStyling: false,
+				// 	usePopupEasyClose: false,
+				// 	usePopupNav: true,
+				// 	windowMargin: (skel.isActive('small') ? 0 : 50)
+				// });
 
 	});
 
