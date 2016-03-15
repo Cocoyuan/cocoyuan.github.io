@@ -936,7 +936,7 @@
 		background-image: url("images/overlay.png"), url("../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-size: auto,								auto 120%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -961,6 +961,16 @@
 			line-height: 1.75em;
 			margin: 0;
 		}
+
+		#header h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: rgba(255, 255, 255, 0.5);
+			text-decoration: none;
+		}
+		#header h3 a:visited {
+			color: rgba(255, 255, 255, 0.5);
+			text-decoration: none;
+		}
+
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
