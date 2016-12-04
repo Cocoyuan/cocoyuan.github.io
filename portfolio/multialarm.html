@@ -79,39 +79,31 @@
 						<header class="major">
 							<h2>Process</h2>
 						</header>
-						
-						<h3>Design Process</h3>
-						<h4>User Behavior Observation</h4>
+						<h3>User Behavior Observation</h3>
 						<p>Basically, people’s behaviors will be different during different contexts. For example, when people are running, they may use the alarm to remind them how many time they have run. As our observation, people usually tie their smartphone on their arm. In such situation, when the alarm works, people do not like to use hand to dismiss the clock. Because the alarm is tied in the arm which is inconvenient for them to use hand, also maybe they want to keep running and the hands are not free. Meanwhile, they more like to use voice input to dismiss the clock. Or in that situation, the alarm just rings once which functions as reminding and people do not need to dismiss it.</p>
 						<img src="">
-						<h4>Design Concept</h4>
+						<h3>Design Concept</h3>
 						<p>Based on our observations, we conclude some activities and environment people use alarm.As the RDF shows, our context is devided into two part: environment and activities. Environment includes serious environment, regular environment and noisy environment. And the activities contain cooking, running self- schedule and sleeping. As for the modality, there are input modality and output modality. Input modality includes typing, gesture and voice. Output modality are sound, vibration and view. In the input modality, the gesture is devided into shaking and turning. Shaking means people should shake the smartphone strongly to dismiss the alarm which is a difficult way to dismiss the alarm. While turning means people can dismiss the alarm by turning over the smartphone, which is an easier way to dismiss the alarm. In output modality, sound and vibration has repeated branch. It means the ringing of the alarm can be repeated several times or just work once.</p>
-						<h4>Interface Design</h4>
-						<img src="">
-						
-						<p></p>
-						<h3>Implemetation</h3>
-						
-						<p>1) Using Alarm Manager
-This is basic class for building an alarm application, it can change the status of the alarm,
-and skip the broadcast
-2) Using Broadcast
-Open the activity by broadcast, realize the shake function
-3) Using Vibrator and Playing sounds
-Change notification style between vibrate and ring through Media Player and Vibrator
-class
-4) Using Sensor Manager
-In this app, we need Sensor Manager to open the accelerated sensor, then catch the degree
-of phone shaking to judge the value of the wake up
-5) Timer
-Calculate when does the alarm working by using the Timer</p>
-						<p></p>
-						
-						<img src="../images/" width="100%" /><br>
+						<img src="../images/multialarm/rdf.jpg" width="100%" /><br>
+						<h3>Interface Design</h3>
+						<p>Base on the design concept, we design the multimodal interface of Multi-Alarm.</p>
+						<img src="../images/multialarm/interface_g.png" width="100%" /><br>
 
-						<h3>Evaluation</h3>
-						<h4>User Test</h4>
-						<img src="../images/" width="100%" /><br>
+						
+					
+						<h3>Implemetation</h3>
+						<h5>There are some main problems we should solved in Android developing:</h5>
+							<ol>
+								<li>Using Alarm Manager: This is basic class for building an alarm application, it can change the status of the alarm, and skip the broadcast</li>
+								<li>Using Broadcast: Open the activity by broadcast, realize the shake function</li>
+								<li>Using Vibrator and Playing sounds: Change notification style between vibrate and ring through Media Player and Vibrator class</li>
+								<li>Using Sensor Manager: In this app, we need Sensor Manager to open the accelerated sensor, then catch the degree of phone shaking to judge the value of the wake up</li>
+								<li>Timer: Calculate when does the alarm working by using the Timer</li>
+										
+							</ol>
+						<h3>User Test</h3>
+						<p>At present, the function in sleeping modality is working well. Therefore we did some user test for this function. Since in sleeping activity, the truing gesture is disabled, users need to shake smartphone strongly to dismiss alarm. When the alarm rings, user can see the message (remind them to shake smartphone to dismiss alarm) in the interface which is as pictures below. Also, the user testing pictures are as below. After strong shaking the smartphone, the alarm can be dismissed.</p>
+						<img src="../images/multialarm/userTest.png" width="80%" /><br>
 
 						
 
