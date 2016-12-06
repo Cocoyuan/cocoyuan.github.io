@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>HighLeng_Transmetics</title>
+		<title>HighLeng_BonBound</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -86,34 +86,37 @@
 						</header>
 			
      
-						<h3>Problem</h3>
-						
-						<!-- <p>Current French skin care products only have French descriptions on package, making it hard for non-native French speakers to understand. What's more, People find it hard to seek for cosmetics that are suitable for their skin type. Starting from the problem, we conducted questionnaires and interviews to know more about our target users.</p> -->
+						<h3>Concept</h3>
+						<h4></h4>
+						<p>First we concluded the problems we got from the introspection and interviews, decided to design a new boundary object. And then we conducted the concepts in these three parts, to make our boundary more complete.</p>
+						<p><span class="image right"><img src="../images/bonbound/boundary.png" alt="" /></span></p>
+						<ul>
+								<li>Alignment&Spacing</li>
+								really pay much attention to the layout and distance between objects, struggling with alignment and spacing, can’t control and manipulate efficiently
+								<li>Overlap</li>
+								set a boundary for a circle, one can’t get close, the other one can’t but I want.
+								<li>Animation: </li>
+								animation, process complex&many steps, limited
+										
+							</ul>
+						<p></p>
+
 					
 						
-						<h3>Interview</h3>
-					<!-- 	<p>Gave away both Chinese and English version of questionnaires in front of a local pharmacy. Our target users were non-French speakers including Chinese and English-speaking people from other countries. Total number: 35. The key findings were as below.</p>
-						
-						<img src="../images/transmetics/questionnaire.jpg" width="100%" /><br> -->
+						<h4>Justification</h4>
 
+						<p>Firstly, three intrumental design principles are well applied on the design concept, we reified the distance around object as boundary, as you can see here, the blue rectangle represents the boundary that around the text. And polymorphism, of course, our boundary has polymorphsim, this simple boundary can be applied on any objects that you created in slides, text, image, shape and even the group shapes, as what shown in the video, you could have group shape in one boundary or group shapes with multiple boundaries. Then reuse principle, we allow user to reuse the output of boundary, which means they could copy and paste any boundary they created and give them to other objects.</p>
+						<img src="../images/bonbound/justification.png" width="80%" />
+						<p></p>
 						<h3>Participatory Design</h3>
-						<img src="../images/bonbound/pDesign.jpg" width="80%" /><br>
-<!-- 
-						<h3>Information Architecture</h3>
+						<p>We made a participantory design with users, got some informations about users’ different mental modal during this period, and comparison these with ours. After that, we designed 6 interaction points in our boundary, like create boundary, manipulate boundary and set boundary’s property, some of them have different branches.</p>
+						<img src="../images/bonbound/pDesign.jpg" width="80%" />
 						<p></p>
-						<img src="../images/transmetics/infoArch.png" width="100%" vertical-align="middle" />
-
-						<h3>Interaction Flow</h3>
-						<img src="../images/transmetics/interactionFlow.png" width="100%" /><br>
-
-						<h3>User Test</h3>
-						<p></p>
-
-						<h3>Business Cavas</h3>
-						<img src="../images/transmetics/cavas.jpg" width="100%" /><br>
-						<!-- <img src="../images/transmetics/interactionFlow.png" width="100%" /><br> -->
-
-					<!--</section> -->
+						<h3>Walkthrough</h3>
+						<p>We shared our video prototype with other group in walkthrough, got many useful feedbacks, that helped us to add some new interaction points, and also mede us redefine some previous version. </p>
+						<h3>Conclusion</h3>
+						<p>Of course we had a lot of problems during the design period. At the begining, our polymorphism and reuse were not clear. We all used digital platform to show our boundary’s work, but we didn’t realize that may limited our design, made the video more like a marketing video. And we also had disagreements with interaction points, for example, we defined create boundary with different branches, toolbar, rightclick and some other normal ways to trriger, we just design as usual without considering which way is more convenient and easier for user. ---gesture----- And our boundary only have the normal porperties, therefore we add the depth to make it solve the overlap more efficiate as Ni said before.</p>
+						<p>For the future work, first we’d like to get some feedback about our video from yours, and of course we need to dicuss more details about our boundary to find more possible functions. Also we found some extreme users(obsessive) from our participantory design, we may design some parts for the exterm cases. Due to our boundary has depth property, we ‘d like to add some 3D animation effects with our boundary in the future.</p>
 					
 				
 					
