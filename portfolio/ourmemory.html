@@ -31,6 +31,7 @@
 				<h5><a href="bonbound.html" >Bonbound</a></h5>
 				<h5><a href="myobeats.html" >Myo Beats</a></h5>
 				<h5><a href="psalarm.html" >Photo Sensitive Alarm</a></h5>
+				<h5><a href="emotiv.html">Emotiv Quality Validation</a></h5>
 
 			</header>
 			
@@ -44,7 +45,7 @@
 						<header class="major">
 							<h2>Introduction</h2>
 						</header>
-						<p>In Progressing....</p>
+						<p>OurMemory is a web-based activity souvenir album generator, which make the process of resource sharing, gathering and sorting more easily. It is a multi-user real-time collaborative platform implemented by Node.js and express. Our goal is to help participants to share the feelings and resources along with the activity, in order to generate a more vivid album.</p>
 						
 					</section>
 					<section id="Portfolio">
@@ -70,13 +71,47 @@
 								
 								<h3>Deliverables</h3>
 								<ul>
-										<li><p><a href="" data-poptrox="ignore" >Questionnaire</a></p></li>
+										<li><p><a href="../file/GroupwareReport.pdf"  data-poptrox="ignore" target="_blank">Project Report</a></p></li>
 										<li><p><a href="https://github.com/Cocoyuan/ourmemory"  data-poptrox="ignore" target="_blank">Github Repositories</a></p></li>
+										
 								</ul>
 								
 							</article>
 						</div>
 					</section>
+					<section id="process">
+						<header class="major">
+							<h2>Process</h2>
+						</header>
+
+						<h3>Motivation</h3>
+						<p>We all have experienced some memorable group activities, such as volunteer works, academic field trips, supporting education in remote area, summer schools, etc. During the activities, which usually last several days, participants always like to take photos and videos to record the special moments with others by using their smartphones or cameras. When the activities are finished, people prefer to make a souvenir album including text, photos and even videos to keep as a souvenir.</p>
+						<h3>Problem</h3>
+						<ul>
+							<li>Time-consuming</li>
+							The gathering process can be time-consuming to wait for all the resources being uploaded from all the participants.
+							<li>Resources need to be re-ordered based on time-line</li>
+							After everyone uploaded, one person is assigned to re-order the resources based on the time-line.
+							<li>Some resources are omitted</li>
+							It can be always hard to all of the photos being taken afterwards. Thus, some resources are easily omitted.
+							<li>Emotions are hard to record afterwards</li>
+							We all know the fact that the emotions at a certain moment, such as exciting, upsetting and feeling of happiness are hard to repeat and record afterwards.
+						</ul>
+						<h3>Functionalities</h3>
+						<ol>
+										<li>Multi-userReal-timeOnlineChatting:</li>
+										The system allows multi-users to enter the server at the same time and chat online.
+										<li>Photos Uploading:</li>
+										Users can upload photos from local device selecting from folder or dragging directly into pages. After being uploaded, the photo can be seen from the interface. The photos uploaded are saved in a pre-defined folder. The file name is generated automatically including the exact uploading time.
+										<li>Albums Generating:</li>
+										Albums are generated base on the time-line. The photos are ordered by their name generated after uploaded.
+										<li>Albums Downloading:</li>
+										Users can download albums by pressing the download button. The a file with all the uploaded resources can be downloaded.
+									</ol>
+						<h3>Interface Design</h3>
+						<p>In progressing...</p>
+						<h3>Impediment</h3>
+						<p>During the whole implementation process, we have run into many difficulties. The biggest one is realising the upload function in the same page. The form POST methods and socket methods have been tried. The upload function can be realised when the file is uploaded onto a different page. Moreover, in order to avoid the override problem, we generate the file name by adding the exact uploading time. </p>
 					
 		<!-- Footer -->
 			<footer id="footer">
