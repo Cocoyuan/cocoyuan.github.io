@@ -1,242 +1,637 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>HighLeng_Land</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Yuan Lyu's portfolio | UX/Interaction Design" />
-		<meta name="keywords" content="yuan lyu, portfolio, ux design, cocoyuan, highlengco" />
-		<script src="js/jquery.min.js"></script>
-		 <!-- <script src="js/jquery.poptrox.min.js"></script> -->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
+<head>
+  <title>HignLeng_Land</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/flat-ui.css">  
+  <link rel="stylesheet" href="css/highlengstyle.css"> 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5DPT1YOZ8XATi_YxgwzxQ_yT0UBpCLJQ&callback=initMap"
+    async defer></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+       $(function(){
+        $(window).scroll(function() {
+            if($(window).scrollTop() <= 600) {
+                $("#mainnavbar").addClass("navbar-inverse");
+            }else{
+                var current = $("#mainnavbar ");
+                current.removeClass("navbar-inverse");
+                current = $(this);
+            }
+        })
+    }
+ );
+    </script>
+</head>
+<body data-spy="scroll"  data-target="#mainnavbar">
+	<nav id="mainnavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">HighLengCo</a>
+			</div>
+			<div >
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a class="smoothscroll" href="#">About</a>
+					</li>
+					<li>
+						<a  href="#home">Portfolio</a>
+					</li>
+					<li>
+						<a class="smoothscroll" href="#resume">Resume</a>
+					</li>
+					<li>
+						<a class="smoothscroll" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header class="highleng_header">
+		<div class="header_content">
+			
+		    <h1>Hi! I'm Yuan Lyu.</h1>
+		    <p>A Hybrid UX/Interaction Designer.</p> 
+		   	<div class="row"  style="padding-top:200px">
+		   		<div class="col-sm-4"></div>
+		   			<div class="col-sm-4">
+		    			<a href="file/CV_YLYU.pdf" class="btn btn-block btn-lg btn-inverse">Download CV</a>
+		    		</div>
+		    	<div class="col-sm-4"></div>
+			</div>
 		
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
+			
+	  	</div>
+	  	
+	  	
+	</header>
+	<div id="home" class="container" >
 		
-	</head>
-	<body id="top">
+	  	<section id="portfolio" class="text-center" style="padding-top:60px">
+	  		<h3>Portfolio</h3>
+		  	<div id="filter" class="text-center" style="padding-bottom:30px">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a data-toggle="tab" href="#all">All</a></li>
+				<li><a data-toggle="tab" href="#mobile">Mobile&Web</a></li>
+				<li><a data-toggle="tab" href="#concept">Interaction/Concept</a></li>
+				<li><a data-toggle="tab" href="#usability">Usability Research</a></li>
+				<li><a data-toggle="tab" href="#game">Game Design</a></li>
+				<li><a data-toggle="tab" href="#hardware">Hardware</a></li>
+			</ul>
+			</div>
+		<div class="tab-content">
+			<div id="all" class="tab-pane fade in active">
+			<div class="row text-center" >
+			    <div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+						<img src="images/thumbs/transmetics.png" class="img-rounded" width="100%"/>
+						<figcaption>
+							<p>Android APP for helping foreigners buy suitable cosmetics in France</p>
+							<a href="portfolio/transmetics.html"></a>
+						</figcaption>			
+					</figure>
+			    	
+				    <!--  -->
+			    </div>
+			    <div class="col-sm-4 grid" >
+			      
+			      <figure class="effect-bubba">
+			      	<img src="images/thumbs/bingoelder.png" class="img-rounded" width="100%"/>
+			      	<figcaption>
+				    <p>Android Tablet App for elder people's socializing</p>
+				    <a href="portfolio/bingoelder.html"></a>
+					</figcaption>
+					</figure>
+			    </div> 
+			    <div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/multialarm.png" class="img-rounded" width="100%"/>
+			   		<figcaption>
+			    		<p>A Multi-modal Alarm APP Suitable in<br> Different Situation</p>
+			    		<a href="portfolio/multialarm.html"></a>
+			    	</figcaption>
+					</figure>
+			    	
+		    	</div>
+		    </div>
+		  	<div class="row text-center" style="padding-top:30px">
+		    
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/bonbound.jpg" class="img-rounded" width="100%"/>
+		      		<figcaption>
+			    	<p>Concept re-design, HCI Advanced Design Course</p>
+			    	<a href="portfolio/bonbound.html"></a>
+					</figcaption>
+				<figure>
+		    	
+		    </div>
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      	<a href="portfolio/emotiv.html">
+			    	<img src="images/thumbs/emotiv.png" class="img-rounded" width="100%"/>
+			    </a>
+			    <figcaption>
+			    	<p>Analysis Design on EEG Signal by<br>
+			    	Emotiv Epoc+ Device</p>
+			    	<a href="portfolio/emotiv.html"></a>
+			</figcaption>
+		</figure>
+		    </div>
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      <img src="images/thumbs/myobeats.jpg" class="img-rounded" width="100%"/>
+		      <figcaption>
+		      	<p>Gesture-based Musical Interaction Design<br> and Implement</p>
+		      	<a href="portfolio/myobeats.html"></a>
+			</figcaption>
+			<figure>
+		    </div>
+		    
+		  </div>
+		  <div class="row text-center" style="padding-top:30px">
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/ghostman.jpg" class="img-rounded" width="100%"/>
+		      		<figcaption>
+		      			
+		      			<p>Java Simple Game Project Design and Implement</p>
+		      			<a href="portfolio/ghostman.html"></a>
+			   
+					</figcaption>
+				</figure>
+		    </div>
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      	<img src="images/thumbs/ourmemory.jpg" class="img-rounded" width="100%"/>
+			    <figcaption>
+			    	<p>Web-Online Chat and Photo Sharing Groupware Project</p>
+			    	<a href="portfolio/ourmemory.html"></a>
+			    
+				</figcaption>
+		    </div>
+		    
+		    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      <img src="images/thumbs/arduino.jpg" class="img-rounded" width="100%"/>
+			    <figcaption>
+			    <p><b>Photo Sensitive Alarm</b><br>Hardware design with Arduino</p>
+			    <a href="portfolio/psalarm.html"></a> 
+			</figcaption>
+		    </div>
+		  </div>
+		  </div>
+		  <div id="mobile" class="tab-pane fade">
+		  	<div class="row text-center">
+			    <div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+						<img src="images/thumbs/transmetics.png" class="img-rounded" width="100%"/>
+						<figcaption>
+							<p>Android APP for helping foreigners buy suitable cosmetics in France</p>
+							<a href="portfolio/transmetics.html"></a>
+						</figcaption>			
+					</figure>
+			    </div>
+			    
+			    <div class="col-sm-4 grid" >
+			      
+			      <figure class="effect-bubba">
+			      	<img src="images/thumbs/bingoelder.png" class="img-rounded" width="100%"/>
+			      	<figcaption>
+				    <p>Android Tablet App for elder people's socializing</p>
+				    <a href="portfolio/bingoelder.html"></a>
+					</figcaption>
+					</figure>
+			    </div> 
+			    <div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/multialarm.png" class="img-rounded" width="100%"/>
+			   		<figcaption>
+			    	<p>A Multi-modal Alarm APP Suitable in<br> Different Situation</p>
+			    	<a href="portfolio/multialarm.html"></a>
+			    </figcaption>
+			</figure>
+		    	</div>
+			</div>
+			<div class="row text-center" style="padding-top:30px">
+			    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      	<img src="images/thumbs/ourmemory.jpg" class="img-rounded" width="100%"/>
+			    <figcaption>
+			    	<p>Web-Online Chat and Photo Sharing Groupware Project</p>
+			    	<a href="portfolio/ourmemory.html"></a>
+			    
+				</figcaption>
+		    </div>
+		  </div>
+	  </div>
+	  <div id="concept" class="tab-pane fade">
+		  	<div class="row text-center">
+		  		<div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/multialarm.png" class="img-rounded" width="100%"/>
+			   		<figcaption>
+			    	<p>A Multi-modal Alarm APP Suitable in<br> Different Situation</p>
+			    	<a href="portfolio/multialarm.html"></a>
+			    	</figcaption>
+					</figure>
+				</div>
+			    <div class="col-sm-4 grid" >
+			      
+			      <figure class="effect-bubba">
+		      		<img src="images/thumbs/bonbound.jpg" class="img-rounded" width="100%"/>
+		      		<figcaption>
+			    	<p>Concept re-design, HCI Advanced Design Course</p>
+			    	<a href="portfolio/bonbound.html"></a>
+					</figcaption>
+				<figure>
+			    </div> 
+		    
+		    	<div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      	<img src="images/thumbs/ourmemory.jpg" class="img-rounded" width="100%"/>
+			    <figcaption>
+			    	<p>Web-Online Chat and Photo Sharing Groupware Project</p>
+			    	<a href="portfolio/ourmemory.html"></a>
+			    
+				</figcaption>
+		    	</div>
+		    </div>
+		    
+	  </div>
+	  <div id="game" class="tab-pane fade">
+		  	<div class="row text-center">
+			    <div class="col-sm-4 grid" >
+			      
+			      <figure class="effect-bubba">
+			      	<img src="images/thumbs/bingoelder.png" class="img-rounded" width="100%"/>
+			      	<figcaption>
+				    <p>Android Tablet App for elder people's socializing</p>
+				    <a href="portfolio/bingoelder.html"></a>
+					</figcaption>
+					</figure>
+			    </div> 
+			    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/ghostman.jpg" class="img-rounded" width="100%"/>
+		      		<figcaption>
+		      			
+		      			<p>Java Simple Game Project Design and Implement</p>
+		      			<a href="portfolio/ghostman.html"></a>
+			   
+					</figcaption>
+				</figure>
+		    </div>
+		    </div>
+		    
+	  </div>
+	  <div id="usability" class="tab-pane fade">
+		  	<div class="row text-center" >
+			    <div class="col-sm-4 grid">
+			    	<figure class="effect-bubba">
+						<img src="images/thumbs/transmetics.png" class="img-rounded" width="100%"/>
+						<figcaption>
+							<p>Android APP for helping foreigners buy suitable cosmetics in France</p>
+							<a href="portfolio/transmetics.html"></a>
+						</figcaption>			
+					</figure>
+			    </div>
+			    <div class="col-sm-4 grid" >
+			      
+			      <figure class="effect-bubba">
+			      	<img src="images/thumbs/bingoelder.png" class="img-rounded" width="100%"/>
+			      	<figcaption>
+				    <p>Android Tablet App for elder people's socializing</p>
+				    <a href="portfolio/bingoelder.html"></a>
+					</figcaption>
+					</figure>
+			    </div> 
+			    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      	<a href="portfolio/emotiv.html">
+			    	<img src="images/thumbs/emotiv.png" class="img-rounded" width="100%"/>
+			    </a>
+			    <figcaption>
+			    	<p>Analysis Design on EEG Signal by<br>
+			    	Emotiv Epoc+ Device</p>
+			    	<a href="portfolio/emotiv.html"></a>
+			</figcaption>
+		</figure>
+		    </div>
+		    </div>
+	  </div>
+	  <div id="hardware" class="tab-pane fade">
+		  	<div class="row text-center">
+		  		<div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+			    	<img src="images/thumbs/emotiv.png" class="img-rounded" width="100%"/>
+			    	<figcaption>
+			    	<p>Analysis Design on EEG Signal by<br>
+			    	Emotiv Epoc+ Device</p>
+			    	<a href="portfolio/emotiv.html"></a>
+					</figcaption>
+				</figure>
+		    	</div>
+			    <div class="col-sm-4 grid">
+		    		<figure class="effect-bubba">
+		      		<img src="images/thumbs/myobeats.jpg" class="img-rounded" width="100%"/>
+		      		<figcaption>
+		      			<p>Gesture-based Musical Interaction Design<br> and Implement</p>
+		      			<a href="portfolio/myobeats.html"></a>
+					</figcaption>
+					<figure>
+		    	</div>
+			    <div class="col-sm-4 grid">
+		    	<figure class="effect-bubba">
+		      		<img src="images/thumbs/arduino.jpg" class="img-rounded" width="100%"/>
+			    	<figcaption>
+			    
+			    	<p><b>Photo Sensitive Alarm</b><br>Hardware design with Arduino</p>
+			    	<a href="portfolio/psalarm.html"></a> 
+					</figcaption>
+				</figure>
+		    	</div>
+			</div>
+	  
+	  </div>
+	  </section>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/profile.jpg" alt="" /></a>
-				<h1><strong>I'm Yuan Lyu</strong><br />
-				
-					<h3></h3>
-				<h3><a  href="#About" >About Me</a></h3>
-				<h3><a class="smoothscroll" href="#Portfolio" >Portfolio</a></h3>
-				<h3><a class="smoothscroll" href="#Resume" >Resume</a></h3>
-				<h3><a class="smoothscroll" href="#Contact" >Contact</a></h3>
-			</header>
+	  <!-- resume section-->
+	  <section id="resume" style="padding-top:50px">
+	  	<hr>
+	  	<div class="row">
+	  	<div class="col-sm-1"></div>
+	  	<div style="padding-bottom:50px" class="col-sm-10">
+			<h3 class="text-center">Resume</h3>
+			<h5>Academic Background</h5>
+			<br>
+			<table>
+				<tbody>
+					<tr>
+						<td width="25%">MSc Human Computer Interaction and Design</td>
+						<td><a href="https://www.tu-berlin.de/">Technical University, TU Berlin</a> Germany</td>
+						<td><i>Oct.2016 ~ Present</i></td>
+					</tr>
+					<tr>
+						<td width="25%"></td>
+						<td><a href="http://www.u-psud.fr/en/index.html">Université Paris-Sud</a> France </td>
+						<td><i>Sep.2015 ~ Jun.2016</i></td>
+					</tr>
+					<tr>
+						<td width="25%">Minor in Entrepreneurship</td>
 
-		<!-- Main -->
-			<div id="main">
+						<td><a href="https://masterschool.eitdigital.eu/">EIT Digital Master School</a></td>
+						<td><i>Sep.2015 ~ Present</i></td>
+					</tr>
 
-				<!-- One -->
-					<section id="About">
-						<header class="major">
-							<h2>About Me</h2>
-						</header>
-						<p>I am a human-computer interaction design master student in EIT Digital Master School from China. Currently study in Technical University Berlin for my 2nd year master. As a hybrid designer with programming experience, I am adept at understanding and communicating the story that drives design of product with empathy, passion and commitment. Sincerely hope that I can make a position of an internship in the area of Product, Interaction and UX Design. 
-						</p>
-						
-						<ul class="actions">
-							<li><a href="file/CV_LYU.pdf" class="button">Download CV</a></li>
-						</ul>
-					</section>
-				
-					<section id="Portfolio">
-						<h2>Portfolio</h2>
-						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="portfolio/transmetics.html" class="image fit thumb" style="content:'mobile design'">
-									<img src="images/thumbs/transmetics.jpg" alt=""/>
-								</a>
-								<h3>Transmetics</h3>
-								<p>Android APP for helping foreigners buy suitable cosmetics in France</p>
-							</article>
+					<tr>
+						<td width="25%">BSc Network Engineering</td>
+						<td><a href="https://en.wikipedia.org/wiki/Dalian_Maritime_University">Dalian Maritime University (DMU)</a> China </td>
+						<td><i>Sep.2011 ~ Jun.2015</i></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr>
+	  		<div class="table-wrapper">
+              <h5>Work Experience</h5>
+              <br>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td width="25%">Product Support<br>Working student</td>
+                      <td>Product Team, <a href="http://www.jovoto.com">Jovoto GmbH</a> Berlin, Germany</td>
+                      <td> <i>Mar.2017 ~ May.2017</i></td>
+                    </tr>
+                    <tr>
+                    	<td>UX Intern</td>
+						<td>Innovation Institute, <a href="http://fotileglobal.com/">FOTILE Kitchen Ware Co., Ltd.</a> <br>Ningbo, China</td>
+						<td> <i>Oct.2014 ~ Jan.2015</i></td>
+                    </tr>
+                    <tr>
+                      <td>Winter Intern</td>
+						<td>Operation Maintenance Dep of Shanxi branch, <a href="https://en.wikipedia.org/wiki/China_Unicom">China United Telecommunications Co., Ltd. </a></td>
+						<td width="25%"> <i>Jan.2014 ~ Mar.2014</i></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+            <hr>
+	  		<div class="table-wrapper">
+	  			<!-- <div class="row text-center">
+	  				<div class="col-sm-4">Design</div>
+	  				<div class="col-sm-4">Programming</div>
+	  				<div class="col-sm-4">Language</div>
+	  			</div> -->
+				<h5>Professional Skills</h5>
+				<br>
+					<table>
+						<tbody>
+							<tr>
+								<td width="25%"><b>Design</b></td>
+											<td>
+												<div class="row">
+													<div class="col-sm-6">User-Centered Design(UCD) Methods
+														<div class="progress">
+														<div class="progress-bar" style="width:70%"></div> 
+													</div>
+													</div>
+													<div class="col-sm-6">Prototyping
+														<div class="progress">
+														<div class="progress-bar" style="width:80%"></div> 
+													</div>
+													</div>
+													<div class="col-sm-6">Usability Research
+														<div class="progress">
+															<div class="progress-bar" style="width:75%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">Sketch
+														<div class="progress">
+															<div class="progress-bar" style="width:70%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">Axure/Balsamiq
+														<div class="progress">
+															<div class="progress-bar" style="width:90%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">Principle/Origami
+														<div class="progress">
+															<div class="progress-bar" style="width:25%"></div> 
+														</div>
+													</div>
 
-							
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="portfolio/bingoelder.html" class="image fit thumb" >
-									<img src="images/thumbs/bingoelder.png" alt="" />
-								</a>
-								<h3>Bingo for Elder</h3>
-								<p>Android Tablet App for elder people's socializing</p>
-								
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="portfolio/multialarm.html" class="image fit thumb" ><img src="images/thumbs/multialarm.jpg" alt="" /></a>
-								<h3>Multimodal Alarm</h3>
-								<p>A multimodal alarm app suitable in different situation</p>
-								
-							</article>
-							
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="portfolio/bonbound.html" class="image fit thumb" >
-									<img src="images/thumbs/bonbound.jpg" alt="" /></a>
-								<h3>Bonbound</h3>
-								<p>Concept/Prototype Design, HCI Advanced Design Course</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="portfolio/myobeats.html" class="image fit thumb" >
-									<img src="images/thumbs/myobeats.jpg" alt="" /></a>
-								<h3>Myo Beats</h3>
-								<p>Gesture-based musical interaction design and implement</p>
-								
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="portfolio/emotiv.html" class="image fit thumb" >
-									<img src="images/thumbs/emotiv.jpg" alt="" /></a>
-								<h3>Emotiv Quality Validation</h3>
-								<p>Analysis design on EEG signal by Emotiv Epoc+ device</p>
-							</article>
-							<article class="6u 12u(xsmall) work-item">
-								<a href="portfolio/ghostman.html" class="image fit thumb" >
-									<img src="images/thumbs/ghostman.jpg" alt="" />
-								</a>
-								<h3>Ghost Man</h3>
-								<p>Java simple game project design and implement</p>
-								<!-- <a href="portfolio/ghostman.html" data-poptrox="ignore">See more</a> -->
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="portfolio/ourmemory.html" class="image fit thumb" ><img src="images/thumbs/ourmemory.jpg" alt="" /></a>
-								<h3>Our Memory</h3>
-								<p>Web-online Chat and Photo Sharing</p>
-								<!-- <a href="portfolio/ourmemory.html" data-poptrox="ignore">See more</a> -->
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="portfolio/psalarm.html" class="image fit thumb" >
-									<img src="images/thumbs/arduino.jpg" alt="" /></a>
-								<h3>Photo Sensitive Alarm</h3>
-								<p>Hardware design with Arduino</p>
-								
-							</article>
-							
-							
-						</div>
-						
-					</section>
-
-
-					<section id="Resume">
-						<header class="major">
-							<h2>Resume</h2>
-						</header>
-						<h3>Academic Background</h3>
-						<h4>MSc Human Computer Interaction and Design</h4>
-						<p><a href="https://www.tu-berlin.de/">Technical University, TU Berlin</a> Germany<i>Oct.2016 ~ Present</i><br>
-						<a href="http://www.u-psud.fr/en/index.html">Université Paris-Sud</a> France <i>Sep.2015 ~ Jun.2016</i></p>
-						<h4>Minors in Entrepreneurship</h4>
-						<p><a href="https://masterschool.eitdigital.eu/">EIT Digital Master School</a> <i>Sep.2015 ~ Present</i></p>
-						<h4>BSc Network Engineering</h4>
-						<p><a href="https://en.wikipedia.org/wiki/Dalian_Maritime_University">Dalian Maritime University (DMU)</a> China <i>Sep.2011 ~ Jun.2015 </i></p>
-
-						
-						<div class="table-wrapper">
-							<h3>Work Experience</h3>
-								<table>
-									<tbody>
-										<tr>
-											<td width="25%">Product Support<br>Working student</td>
-											<td>Product Team, <a href="http://www.jovoto.com">Jovoto GmbH</a> <br>Berlin, Germany</td>
-											<td> <i>Mar.2017 ~ May.2017</i></td>
-										</tr>
-										<tr>
-											<td>UX Intern</td>
-											<td>Innovation Institute, <a href="http://fotileglobal.com/">FOTILE Kitchen Ware Co., Ltd.</a> <br>Ningbo, China</td>
-											<td> <i>Oct.2014 ~ Jan.2015</i></td>
-										</tr>
-										<tr>
-											<td>Winter Intern</td>
-											<td>Operation Maintenance Dep of Shanxi branch, <a href="https://en.wikipedia.org/wiki/China_Unicom">China United Telecommunications Co., Ltd. </a></td>
-											<td width="25%"> <i>Jan.2014 ~ Mar.2014</i></td>
-										</tr>
-										
-									</tbody>
-								</table>
-						</div>
-						<div class="table-wrapper">
-							<h3>Professional Skills</h3>
-								<table>
-									<tbody>
-										<tr>
-											<td>Design</td>
-											<td>User-Centered Design(UCD) Methods, Participatory Design, Mockups, Prototyping, Usability Test, Sketch, Photoshop, Axture, InVison, Flash, Balsamiq, OmniGraffle</td>
-										</tr>
-										<tr>
-											<td>Programming</td>
-											<td>JAVA/C#, HTML/CSS, ASP.NET, SQL Server, JavaScript, Arduino, Node.JS, PHP, MySQL, MATLAB, R
+												</div> 
 											</td>
 										</tr>
+										<tr height="30px"></tr>
 										<tr>
-											<td>Language</td>
-											<td>Chinese (Native), English (Fluent), Korean (Elementary), Italian(Beginner)</td>
+											<td><b>Programming</b></td>
+											<td>
+												<div class="row">
+													<div class="col-sm-6">HTML/CSS
+														<div class="progress">
+														<div class="progress-bar" style="width:80%"></div> 
+													</div>
+													</div>
+													<div class="col-sm-6">JAVA/C#
+														<div class="progress">
+														<div class="progress-bar" style="width:60%"></div> 
+													</div>
+													</div>
+													<div class="col-sm-6">JavaScript
+														<div class="progress">
+															<div class="progress-bar" style="width:45%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">SQL Server/MySQL
+														<div class="progress">
+															<div class="progress-bar" style="width:55%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">Arduino
+														<div class="progress">
+															<div class="progress-bar" style="width:60%"></div> 
+														</div>
+													</div>
+													<div class="col-sm-6">Node.JS
+														<div class="progress">
+															<div class="progress-bar" style="width:35%"></div> 
+														</div>
+													</div>
+
+												</div> 
+											</td>
+										</tr>
+										<tr height="30px"></tr>
+										<tr>
+											<td><b>Language</b></td>
+											<td>
+												<div class="row">
+												<div class="col-sm-6">Chinese
+													<div class="progress">
+														<div class="progress-bar" style="width:100%"></div> 
+													</div>
+												</div>
+												<div class="col-sm-6">English
+													<div class="progress">
+														<div class="progress-bar" style="width:80%"></div> 
+													</div>
+												</div>
+												
+												<div class="col-sm-6">Korean
+													<div class="progress">
+														<div class="progress-bar" style="width:35%"></div> 
+													</div>
+												</div>
+												<div class="col-sm-6">Italian
+													<div class="progress">
+														<div class="progress-bar" style="width:15%"></div> 
+													</div>
+												</div>
+											</div>
+
+										</td>
+										
 										</tr>
 									</tbody>
 								</table>
-							</div>
-					</section>
+			</div>
+	  	</div>
+	  	<div class="col-sm-1"></div>
+	  	</div>
+	  </section>
+
+	  <!-- world trip section -->
+
+	 <!--  <section id="trip">
+	  	<hr>
+	  	<h3 class="text-center">Footprint</h3>
+	  	<div id="map"></div>
+	  </section> -->
+	  <!-- contact section -->
+	  <section id="contact" style="padding-top:50px">
+	  	<hr>
+	  	<div class="row">
+	  	<div class="col-sm-1"></div>
+	  	<div class="col-sm-10" style="padding-bottom:50px">
+	  	<h3 class="text-center">Get In Touch</h3>
+			<p>WANT TO TALK? Want to know more about a project? Interested in any cooperation? Or maybe you have a suitable job opportunity for me? Feel free to drop me a line even if you just want to say hi!</p>
+			<div class="row">
 				
-					<section id="Contact">
-						<h2>Get In Touch</h2>
-						<p>WANT TO TALK? Want to know more about a project? Interested in any cooperation? Or maybe you have a suitable job opportunity for me? Feel free to drop me a line even if you just want to say hi!</p>
-						<div class="row">
-							<div class="8u 12u$(small)">
-								<form method="post" action="MAILTO:yuan.lyu@hotmail.com" enctype="text/plain">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-										<div class="6u$ 12u$(xsmall)">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-										</ul>
-										</div>
-									</div>
-								</form>
+				<div class="login-form col-sm-7">
+					<form method="post" action="MAILTO:yuan.lyu@hotmail.com" enctype="text/plain">
+						<div class="row uniform 90%">
+							<div class="form-group" >
+								<div class="col-sm-6" style="padding-bottom:20px">
+								<input type="text" name="name" id="name" placeholder="Name" class="form-control" /></div>
+								<div class="col-sm-6">
+								<input type="text" name="email" id="email" placeholder="Email" class="form-control"/>
+								</div>
 							</div>
-							<div class="4u$ 12u$(small)">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										Berlin, Germany<br/>
-										<!-- 17, Rue Charles de Gaulle<br />
-										Orsay, 91400<br />
-										France -->
-									</li>
-									<li>
-										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										+49 15733262956
-									</li>
-									<li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="mailto:yuan.lyu@hotmail.com">yuan.lyu@hotmail.com</a>
-									</li>
-								</ul>
+							<div class="col-sm-12" style="padding-bottom:20px">
+								<textarea name="message" id="message" placeholder="Message" rows="4" class="form-control"></textarea>
+							</div>
+							<div class="col-sm-6">
+							<input type="submit" class="btn btn-block btn-lg btn-primary" value="Send Message" />		
 							</div>
 						</div>
-					</section>
-
-
+					</form>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-4" style="padding-top:60px">
+					<!-- <ul class="labeled-icons">
+						<li> -->
+							<label>
+						<span class="fui-location"></span>
+						&nbsp;&nbsp;Köthener Straße 31，10963<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berlin, Germany<br/>
+							</label>
+							<label>
+							<span class="fui-skype"></span>
+							&nbsp;&nbsp;+49 (0)15733262956
+					</label>
+					<label>
+							<span class="fui-mail"></span>
+							<a href="mailto:yuan.lyu@hotmail.com">&nbsp;&nbsp;yuan.lyu@hotmail.com</a>
+						</label>
+				</div>
+				
 			</div>
+		</div>
+		</div>
+	  </section>
+	</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/yuanlyu" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/Cocoyuan" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.instagram.com/alchemist_coco/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:yuan.lyu@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="images/wechat.jpg" class="icon fa-wechat"><span class="label">Wechat</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 Yuan Lyu</li>
-				</ul>
-			</footer>
-
-	</body>
+	<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+					<a href="images/wechat.jpg"><span  class="fui-wechat"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
+</body>
 </html>

@@ -7,87 +7,71 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="../js/jquery.min.js"></script>
-		<script src="../js/jquery.poptrox.min.js"></script>
-		<script src="../js/skel.min.js"></script>
-		<script src="../js/init_p.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="../css/skel.css" /> 
-			<link rel="stylesheet" href="../css/style.css" />
-			<link rel="stylesheet" href="../css/style-xlarge.css" />
-		</noscript>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
 		
 	</head>
 	
 <body id="top">
 
 		<!-- Header -->
-			<header id="header">
-				
-				<h1><a href="../index.html#Portfolio">《 Portfolio</a></h1>
-				<br />
-				<h5><a href="transmetics.html" >Transmetics</a></h5>		
-				<h4><a href="bingoelder.html" ><strong>Bingo for Elder</strong></a></h4>
-				<h5><a href="multialarm.html" >Multimodal Alarm</a></h5>
-				<h5><a href="bonbound.html" >Bonbound</a></h5>
-				<h5><a href="myobeats.html" >Myo Beats</a></h5>
-				<h5><a href="emotiv.html">Emotiv Quality Validation</a></h5>
-				<h5><a href="ghostman.html" >Ghost Man</a></h5>
-				<h5><a href="ourmemory.html" >Our Memory</a></h5>
-				<h5><a href="psalarm.html" >Photo Sensitive Alarm</a></h5>
-				
-				
-
+			<header class="portfolio_header" style="background-image:url('../images/bingoelder/bg.png'); background-size:100%;">
+				<div class="header_content">
+	
+				</div>
+		    
 			</header>
 			
-			
 		<!-- Main -->
-		
-			 <div id="main"> 
+			<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Nov.2016 - Mar. 2017</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></h5>
+								<p><small>Berlin, Germany</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>UI&UX Design</small><br>
+								<small>Usability test</small><br></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<a href="#video"  ><small>Demo Video Introduction</small></a><br>
+								<a href="../file/healthcare-final-report.pdf" data-poptrox="ignore" target="_blank"><small>Project Paper</small></a><br>
+								
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+			 <div id="main" class="portfolio_container"> 
 
 				<!-- One -->
 					 <section id="About">
-						<header class="major">
-							
-							<h2>Introduction</h2>
-						</header>
+						<h5>Introduction</h5>
+						
 						<p>In this project our group has the aim to create an android-application, which suppose to reconnect elderly people to the society and give them the possibility to do that with the fun factor. To make the access easier and increase the acceptance, we take out any kind of seriousness and choose a game. And because of the degree of familiarity among the elderly, we chose Bingo that can be played with family, friends and even complete strangers to help them meet new people through this game and have fun while playing.</p> 
 						
 					</section>
-					<section id="role">
-						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>Time</h3>
-								<p>Nov.2016 - Mar. 2017</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<h3>Location</h3>
-								<p>Berlin, Germany</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>My Role</h3>
-								<p>UI&UX Design</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								
-								<h3>Deliverables</h3>
-								<ul>
-										<li><p><a href="https://vimeo.com/208163261" data-poptrox="vimeo,800x480" >Demo Video Introduction</a></p></li>
-										<li><p><a href="../file/healthcare-final-report.pdf" data-poptrox="ignore" target="_blank">Project Paper</a></p></li>
-								</ul>
-							</article>
-						</div>
-					</section>
 					
 					<section id="process">
-						
-			
      
-						<h3>Problem</h3>
+						<h5>Problem</h5>
 						
 						<p>Nowadays, the age of population in the world is getting older and older. And most of them live in loneliness and isolation. The connection loss with community has negative impact psychically and physically. This demographic change grows the society of the elderly and generates problems. Therefore we want to help those people to find a way back to the community with the use of technology and let them regain some piece of quality of life.</p>
 						<img src="../images/bingoelder/motivation.png" width="100%" />
 
-						<h3>Solution</h3>
+						<h5>Solution</h5>
 						<p>We cannot solve the isolation problem of the elderly with an application, but we can increase the quality of somebody’s life. To achieve this we chose to design an application to reconnect the elderly to the society. <br>
 						Because of the degree of familiarity not least under seniors we chose Bingo. Additionally the basic rules are quite simple, easy explained, mostly common knowledge and can easily be edited to increase fun and the replayability.<!--  We chose a game for several reasons:
 						<ol>
@@ -99,75 +83,103 @@
 						  -->
 						</p>
 						<img src="../images/bingoelder/solution.png" width="100%" />
-						<h3>Use Cases</h3>
+						<h5>Use Cases</h5>
 						<p>To fulfill the requirements our bingoapp offer several use-cases:</p>
 						<ul>
 							<li>The game itself:</li>
-							This includes the actual gaming, as well as the variety of different winning patterns or the size of the bingo-card.
+							<small>This includes the actual gaming, as well as the variety of different winning patterns or the size of the bingo-card.</small>
+							<div class="text-center">
 							<img src="../images/bingoelder/uidesign.png" width="100%" />
+						</div>
 							<li>Player registration:</li>
-							To get some kind of Avatar and differ between the accounts of the users a registration is needed. This can be done by the installation threw the people who installed it, that simplify the app for the elderly.
+							<small>To get some kind of Avatar and differ between the accounts of the users a registration is needed. This can be done by the installation threw the people who installed it, that simplify the app for the elderly.</small>
 							<li>Friend-system:</li>
-							A simple reconnection to the society is not quite helpful, when state breaks after a short duration or when it is not possible do forge bounds at all. Friends can easily found and invited to a game.
+							<small>A simple reconnection to the society is not quite helpful, when state breaks after a short duration or when it is not possible do forge bounds at all. Friends can easily found and invited to a game.</small>
 							<li>Creating a game:</li>
-							The user who creates the game (lobby) is automatically the game-master of the created lobby and have to do the settings for the game. Part of the settings are amongst others how many players he want to play with or the pattern for a Bingo. Inside the lobby, he decides when the game starts and can invite friends.
+							<small>The user who creates the game (lobby) is automatically the game-master of the created lobby and have to do the settings for the game. Part of the settings are amongst others how many players he want to play with or the pattern for a Bingo. Inside the lobby, he decides when the game starts and can invite friends.</small>
 							<li>Joining a game:</li>
-							Isolated people mostly do not have many friends. As a conclusion the user have to be able to play with complete strangers. If the user wants to join he game, he gets a list of open lobbys and can join by clicking on them.
+							<small>Isolated people mostly do not have many friends. As a conclusion the user have to be able to play with complete strangers. If the user wants to join he game, he gets a list of open lobbys and can join by clicking on them.</small>
 							<li>Chatting:</li>
-							This is nearly the most important usecase. With this feature the users are able to truly communicate with each other instead of just playing and only see the avatars. Chatting takes place in 2 possible locations, lobby and game playing page:
+							<small>This is nearly the most important usecase. With this feature the users are able to truly communicate with each other instead of just playing and only see the avatars. Chatting takes place in 2 possible locations, lobby and game playing page:</small>
 							<img src="../images/bingoelder/chattingpoint.png" width="100%" />
 						</ul>
-						<h3>Information Architecture</h3>
+						<h5>Information Architecture</h5>
 						<p>According to the use cases we defined in this application, we basically decided how is the information architecture of this tablet app looks like, and due to the time and technical limited, the dark part is our MVP in this project.</p>
-						<img src="../images/bingoelder/bingouias.png" width="100%"/>
-						<p></p>
+						<div class="text-center">
+						<img src="../images/bingoelder/bingouias.png" width="90%"/>
+					</div>
+						<br>
 
-						<h3>Wireframe</h3>
+						<h5>Wireframe</h5>
 						<p>Based on the information architecture, we had agreement on the basic functionality in MVP of this game tablet app, here is our wireframe.</p>
 						<img src="../images/bingoelder/wireframe.png" width="100%" /><br>
 						<p></p>
-						<h3>Interaction Flow</h3>
+						<h5>Interaction Flow</h5>
 						<p>After the UI design and structure define, the overview of interaction flow shows as below:</p>
 						<img src="../images/bingoelder/userflow.png" width="100%" /><br>
+					<section id="video">
+						<h5>Demo Video</h5>
+						<iframe src="https://player.vimeo.com/video/208163261" align="middle" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 
-						<h3>User Test</h3>
+						
+					</section>
+
+						<h5>User Test</h5>
 						<p>For this Study we use A/B test to see if chatting function is helpful to deal with socializing problem. The participates 30 (25 male, 5 female) people between the age of 18 and 30. Even though that technically elderly people are needed for this investigation, mostly students where chosen because of a lack of funds and time. The test process shows below:
 						<img src="../images/bingoelder/usertest.png" width="100%" />
 						There are two charts simply explained the results of this study. The first and second chart shown all non-significant dimensions and significant dimensions respectively. 
 						<img src="../images/bingoelder/chart1.png" width="100%" />
 						The last chart the relative improvement in percentage of the significant dimensions. Negative values are a decrease and positive values a increase compared to the first round.
-						<img src="../images/bingoelder/chart3.png" width="60%" /><br>
+						<div class="text-center">
+						<img src="../images/bingoelder/chart3.png" width="60%" />
+					</div>
 						</p>
 
-						<h3>Conclusion</h3>
-						<p>The goal was to reduce the isolation and loneliness of elderly people and here is an prototype that should helping to address this problem. Even in this early state of development the study shows an improvement in social bounding which will probably increase when future work is realized.<br>
+						<h5>Conclusion</h5>
+						<p>The goal was to reduce the isolation and loneliness of elderly people and here is an prototype that should helping to address this problem. Even in this early state of development the study shows an improvement in social bounding which will probably increase when future work is realized.</p>
+						<p>
 						It is shown how effective notifications about the progress compared with a limited number of chat massages can be to enhance social bonds. The Bingo prototype is on a good way to be an effective tool fighting against isolation among the elderly and probably be able to have a big impact on those people.</p>
+						<br>
 						
 
 					</section> 
-					<section id="video">
-						
-								<iframe src="https://player.vimeo.com/video/208163261" align="middle" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-						
-					</section>
+					
+					<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="transmetics.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="multialarm.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
 			
 			</div>
 		
 
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/yuanlyu" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/Cocoyuan" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.instagram.com/alchemist_coco/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:yuan.lyu@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="../images/wechat.jpg" class="icon fa-wechat"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 Yuan Lyu</li>
-				</ul>
-			</footer> 
+		<footer>
+			<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+					<a href="images/wechat.jpg"><span  class="fui-wechat"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
 
 	</body>
 </html> 
