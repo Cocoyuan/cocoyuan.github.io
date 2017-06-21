@@ -7,142 +7,152 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="../js/jquery.min.js"></script>
-		<script src="../js/jquery.poptrox.min.js"></script>
-		<script src="../js/skel.min.js"></script>
-		<script src="../js/init_p.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="../css/skel.css" />
-			<link rel="stylesheet" href="../css/style.css" />
-			<link rel="stylesheet" href="../css/style-xlarge.css" />
-		</noscript>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
 		
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header">
+			<header class="portfolio_header" style="background-image:url('../images/emotiv/bg.png'); background-size:100%;">
+			<div class="header_content">
 				
-				<h1><a href="../index.html#Portfolio">《 Portfolio</a></h1>
-				<br/>
-				<h5><a href="transmetics.html" >Transmetics</a></h5>
-				<h5><a href="bingoelder.html">Bingo for Elder</a></h5>
-				<h5><a href="multialarm.html" >Multimodal Alarm</a></h5>
-				<h5><a href="bonbound.html" >Bonbound</a></h5>
-				<h5><a href="myobeats.html" >Myo Beats</a></h5>
-				<h4><a href="emotiv.html" ><strong>Emotiv Quality Validation</strong></a></h4>
-				<h5><a href="ghostman.html" >Ghost Man</a></h5>
-				<h5><a href="ourmemory.html" >Our Memory</a></h5>
-				<h5><a href="psalarm.html" >Photo Sensitive Alarm</a></h5>
-
-			</header>
+			</div>
+		    
+		</header>
 
 		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="About">
-						<header class="major">
-							<h2>Introduction</h2>
-						</header>
-						<p>Emotiv Quality Validation, which is named fully Emotiv Epoc+ live metrics quality validation. In this on-going study, we test the quality of the live performance metrics data provided by the Emotiv Epoc+ EEG system. We compare the data from the Affective Slider and Emotiv headset to find out if they correlate.</p>
-					</section>
-					<section id="Portfolio">
+		<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
 						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>Time</h3>
-								<p>Oct.2016 - Feb.2017</p>
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Nov.2016 - Feb.2017</small></p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<h3>Location</h3>
-								<p>Berlin, Germany</p>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Berlin, Germany</small></p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>My Role</h3>
-								<ul>
-										<li><p>Idea generation</p></li>
-										<li><p>User test</p></li>
-										<li><p>Data Analysis</p></li>
-								</ul>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Idea generation</small><br>
+								<small>User test</small><br>
+								<small>Data Analysis</small></p>
+							
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								
-								<h3>Deliverables</h3>
-								<ul>
-										
-										<li><p><a href="https://vimeo.com/195525508" data-poptrox="vimeo,800x480" >Intro-Video</a></p></li>
-										<li><p><a href="../file/Finalpaper_emotiv.pdf" data-poptrox="ignore" target="_blank">Project Paper</a></p></li>
-								</ul>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="https://vimeo.com/195525508" data-poptrox="vimeo,800x480" >Intro-Video</a></small><br>
+								<small><a href="../file/Finalpaper_emotiv.pdf" data-poptrox="ignore" target="_blank">Project Paper</a></small>
 								
 							</article>
+
 						</div>
 					</section>
+				</div>
+			</div>
+		
+			<div class="portfolio_container" style="padding-top:30px">
+				<!-- One -->
+					<section id="About">
+						<h5>Introduction</h5>
+						
+						<p>Emotiv Quality Validation, which is named fully Emotiv Epoc+ live metrics quality validation. In this analysis design study, we test the quality of the live performance metrics data provided by the Emotiv Epoc+ EEG system. We compare the data from the Affective Slider and Emotiv headset to find out if they correlate.</p>
+					</section>
+					
 
 					<section id="process">
-						<header class="major">
-							<h2>Process</h2>
-						</header>
+						
 
-						<h3>Motivation</h3>
+						<h5>Motivation</h5>
 						
 						<p>Research of Brain-Computer Interfaces have traditionally been done in lab environment due to the expensive and inconvenient equipment needed. Low cost alternatives to the laboratory level equipment have come to the market that enable the use of EEG in out-of-the-lab applications. <a href="https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-12-56">[1]</a> Emotiv Epoc+ is one of these low cost EEG sensors that are easy to use and provide EEG data analysis out of the box. This real time analysis of the EEG signal allows detection of for example valence and engagement. Due to the easy tracking of the user’s emotion the out of the box emotion tracking provides great opportunities for application developers and studies.</p>
 						<p>The quality of the raw data provided by the Emotiv Epoc+ has been studied in several studies <a href="https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-12-56">[1]</a> <a href="https://www.emotiv.com/epoc/">[2]</a> <a href="https://peerj.com/articles/38/">[3]</a>. However, the quality of the real time analysis provided by the Emotiv Xavier SDK has not been validated yet. As the convenient sensor provides a lot of opportunities for applications, it would be beneficial to know how well the real time analysis corresponds to what the user is feeling. Therefore it would be beneficial to study the quality of the real time emotion tracking provided by the Emotiv Xavier SDK.</p>
 					
-						<h3>Related Literature</h3>
+						<h5>Related Literature</h5>
 						<ul>
 							<li>Emotiv Epoc+ & Emotiv Control Panel</li>
 							EMOTIV Epoc+ is a 14 channel wireless EEG, designed for contextualized research and advanced brain computer interface (BCI) applications. The EPOC+ provides access to dense array, high quality, raw EEG data using our subscription based software, Pure•EEG.</br>
 							Emotiv Control Panel is the latest EMOTIV Wireless EEG companion software. Get acquainted with EEG and brain monitoring and learn how to use  your EMOTIV wireless EEG headsets and their features.
 							
-							<header><h5></h5>
+							
 							<p><i>Stytsenko K, Evaldas J and Cosima P (2011) "Evaluation of consumer EEG device Emotiv EPOC" MEi: CogSci Conference 2011, Ljubljana. 2011</i></p>
-							</header>
-							<div class="row 50% uniform">
-							<div class="6u"><span class="image fit"><img src="../images/emotiv/emotiv.png" alt="" /></span></div>
-							<div class="6u$"><span class="image fit"><img src="../images/emotiv/controlpanel.png" alt="" /></span></div>
-						</div>
+							
+							<div class="row">
+							<div class="col-sm-6"><img src="../images/emotiv/emotiv.png" width="80%"/></div>
+							<div class="col-sm-6"><img src="../images/emotiv/controlpanel.png" width="80%" /></div>
+							</div>
 							
 							
 							<li>The Affective Slider: </li>
 							A Digital Self-Assessment Scale for the Measurement of Human Emotions, 2016, Betella</br>
-							<header><h5></h5>
+							
 							<p><i>Betella A, Verschure PFMJ (2016) “The Affective Slider: A Digital Self-Assessment Scale for the Measurement of Human Emotions”. PLoS ONE 11(2): e0148037. doi:10.1371/journal.pone.0148037</i></p>
-							</header>
+							
 
-							<div class="row 50% uniform">
-							<div class="6u"><span class="image fit"><img src="../images/emotiv/selfasse.png" alt="" /></span></div>
-							<div class="6u$"><span class="image fit"><img src="../images/emotiv/affectiveslider.png" alt="" /></span></div>
+							<div class="row">
+							<div class="col-sm-6"><img src="../images/emotiv/selfasse.png" width="80%" /></div>
+							<div class="col-sm-6"><img src="../images/emotiv/affectiveslider.png" width="80%" /></div>
 						</div>
 							
 						</ul>
 
-						<h3>Hypothesis</h3>
+						<h5>Hypothesis</h5>
 						<p>Based on the reserach we did, we defined our hypothesis as below:</br>
 						The <b>VALENCE</b> and <b>EXCITEMENT</b> levels captured by Emotiv headset correlate with the <b>PLEASURE</b> and <b>AROUSAL</b> level evaluated with the Affective slider.</p>
 						
 
-						<h3>Solution</h3>
+						<h5>Solution</h5>
 						<p>The solution in our case is quite clear for now. On the one hand,  we implemented our own testing prototype, test 20-30 pictures per user, get their Pleasure and Arousal level by scaling affective slider. On the other hand, we record the real-time brain activity of users in Valence and Excitement by Emotiv Control Panel. After recording these data from Emotiv SDK and our testing prototype, we do the comparison by using satistic tools, to valide if our hypothesis is correct or not.</p>
-						<img src="../images/emotiv/solution.png" width="100%" />
+						<div class="text-center">
+						<img src="../images/emotiv/solution.png" width="80%" />
+						</div>
 						<p></p>
-						<h3>User Test</h3>
+						<h5>User Test</h5>
 						<p>At the beginning of each test, the charge on the Emotiv Epoc+ was checked, and all sensors of the device were made wet before the participant arrived. To provide more friendly user experience, the two measurements were done on different laptops. Therefore, the clock time on both test laptops were synchronized to the same second, to remove the any influence of time difference.</p>
-						<p>In progress...</p>
+
+						<p>In total, we did 3 pilot tests, user test with 5 female and 9 male. There is no correlation between questionnaire and data, but we could get some hints from that. For example, when the user saw a picture, he laughed but scaled slider to saddest, so in this case we got the minus spearman. Also, some extreme users who is really emotional scaled large. </p>
+
+						<h5>More Content In Progress...</h5><!-- 
+						<img src="../images/emotiv/usertest.png" width="100%" /> -->
 			</section>
+			<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="bonbound.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="myobeats.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/yuanlyu" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/Cocoyuan" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.instagram.com/alchemist_coco/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:yuan.lyu@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="../images/wechat.jpg" class="icon fa-wechat"><span class="label">Wechat</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 Yuan Lyu</li>
-				</ul>
-			</footer>
+			<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+					<a href="images/wechat.jpg"><span  class="fui-wechat"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
 
 	</body>
 </html>

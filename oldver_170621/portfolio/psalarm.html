@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HighLeng_PhotoSensitiveAlarm</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.poptrox.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/init_p.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
+		</noscript>
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				
+				<h1><a href="../index.html#Portfolio">《 Portfolio</a></h1>
+				<br/>
+				<h5><a href="transmetics.html" >Transmetics</a></h5>
+				<h5><a href="bingoelder.html">Bingo for Elder</a></h5>
+				<h5><a href="multialarm.html" >Multimodal Alarm</a></h5>
+				<h5><a href="bonbound.html" >Bonbound</a></h5>
+				<h5><a href="myobeats.html" >Myo Beats</a></h5>
+				<h5><a href="emotiv.html">Emotiv Quality Validation</a></h5>
+				<h5><a href="ghostman.html" >Ghost Man</a></h5>
+				<h5><a href="ourmemory.html" >Our Memory</a></h5>
+				<h4><a href="psalarm.html" ><strong>Photo Sensitive Alarm</strong></a></h4>
+				
+
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="About">
+						<header class="major">
+							<h2>Introduction</h2>
+						</header>
+						<p>This Arduino Photosensitive Alarm plays music when it feels light( of course you can change the light sensor value to control trigger light degree), and it can play 2 different songs by put it vertical or horizontal, also can change speed and volume by using the rotated button, and finally you will got a short snooze by pressing the press switch.</p>
+					</section>
+					<section id="Portfolio">
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<h3>Time</h3>
+								<p>Nov.2015 - Jan.2016</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<h3>Location</h3>
+								<p>Paris, France</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<h3>Individual Work</h3>
+								<ul>
+										<li><p>Idea generation</p></li>
+										<li><p>Hardware and circuit Design</p></li>
+										<li><p>Arduino coding</p></li>
+								</ul>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								
+								<h3>Deliverables</h3>
+								<ul>
+										
+										<li><p><a href="https://vimeo.com/159145154" data-poptrox="vimeo,800x480" >Intro-Video</a></p></li>
+										<li><p><a href="https://github.com/Cocoyuan/PhotoSensitiveAlarm" data-poptrox="ignore" target="_blank">Github Repositories</a></p></li>
+								</ul>
+								
+							</article>
+						</div>
+					</section>
+
+					<section id="process">
+						<header class="major">
+							<h2>Process</h2>
+						</header>
+
+						<h3>Problem</h3>
+						
+						<p>Due to I can hardly hear my alarm every morning and I do want to wake up early than before, maybe wake up by dawn. I’d like to make a Photosensitive Alarm. And this alarm should ring when the light shows. Also, normal alarm rings very boring so I will let it play some music I like to make me delightful in the morning. The song’s rhythm and melody are make by Arduino code.</p>
+					
+						<h3>Function</h3>
+						<ul>
+							<li>Photo sensitive;</li>
+							This alarm should ring when the light shows, which is controlled by changing the photo resistor’s value.
+							<li>2 different songs can be chose from the alarm;</li>
+							The tilt switch to change between different music, when the status of tilt switch changes, the song will change.
+							<li>A short snooze break provided;</li>
+							When the press switch was pressed, it will get a short snooze break by 5 seconds
+							<li>Control the speed and volume of music respectively.</li>
+							2 Potentiometers to control the speed and volume respectively.
+						</ul>
+						
+						All the materials I used:
+						<ul>
+						<li>1 Arduino board</li>
+						<li>1 photo resistor</li>
+						<li>1 tilt switch</li>
+						<li>1 press switch</li>
+						<li>2 potentiometers</li>
+						<li>2 10kΩ resistors and 1 220Ω resistor</li>
+						</ul>
+						
+
+						<h3>Circuit Design</h3>
+						
+						<p>Make the improvement of the circuit. The graph shows below:</p>
+						<img src="../images/psalarm/circuit.jpg" width="50%" /><br>
+
+						<h3>Hardware Design</h3>
+						<p>Connect the circuit, then testing, the final photo sensitive alarm looks like the following:</p>
+						<img src="../images/psalarm/psalarm.jpg" width="80%" /><br>
+					</section>
+				</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/yuanlyu" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/Cocoyuan" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.instagram.com/alchemist_coco/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="mailto:yuan.lyu@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					<li><a href="../images/wechat.jpg" class="icon fa-wechat"><span class="label">Wechat</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2017 Yuan Lyu</li>
+				</ul>
+			</footer>
+
+	</body>
+</html>

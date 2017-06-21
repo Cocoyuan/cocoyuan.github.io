@@ -7,100 +7,85 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="../js/jquery.min.js"></script>
-		<script src="../js/jquery.poptrox.min.js"></script>
-		<script src="../js/skel.min.js"></script>
-		<script src="../js/init_p.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="../css/skel.css" />
-			<link rel="stylesheet" href="../css/style.css" />
-			<link rel="stylesheet" href="../css/style-xlarge.css" />
-		</noscript>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
 		
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header">
+			<header class="portfolio_header" style="background-image:url('../images/multialarm/bg.png'); background-size:100%;">
+			<div class="header_content">
 				
-				<h1><a href="../index.html#Portfolio">《 Portfolio</a></h1>
-				<br />
-				<h5><a href="transmetics.html" >Transmetics</a></h5>
-				<h5><a href="bingoelder.html">Bingo for Elder</a></h5>
-				<h4><a href="multialarm.html" ><strong>Multimodal Alarm</strong></a></h4>
-				<h5><a href="bonbound.html" >Bonbound</a></h5>
-				<h5><a href="myobeats.html" >Myo Beats</a></h5>
-				<h5><a href="emotiv.html">Emotiv Quality Validation</a></h5>
-				<h5><a href="ghostman.html" >Ghost Man</a></h5>
-				<h5><a href="ourmemory.html" >Our Memory</a></h5>
-				<h5><a href="psalarm.html" >Photo Sensitive Alarm</a></h5>
-				
-
-			</header>
+			</div>
+		    
+		</header>
 
 		<!-- Main -->
-			<div id="main">
+		<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Nov.2015 - Feb.2016</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Paris, France</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Multimodal interaction design</small><br>
+								<small>Android platform development</small><br>
+								<small>User test</small><br></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="../file/MultimodalAlarm.pdf" data-poptrox="ignore"target="_blank">Project Report</a></small><br>
+								<small><a href="https://github.com/Cocoyuan/MultiAlarm" data-poptrox="ignore" target="_blank">Github Repositories</a></small>
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+		
+			<div class="portfolio_container" style="padding-top:30px">
 
 				<!-- One -->
 					<section id="About">
-						<header class="major">
-							<h2>Introduction</h2>
-						</header>
+							<h5>Introduction</h5>
+						
 						<p>Multimodal Alarm (Multi-Alarm), which is a uncommon Android clock application considers about environment and people’s activities. Based on different concepts, the multi-alarm provides different input and ourput modalities, to make user feel more friendly and more convenient by using this. </p>
 						
 					</section>
-
-					<section id="Portfolio">
-						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>Time</h3>
-								<p>Nov.2015 - Feb.2016</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<h3>Location</h3>
-								<p>Paris, France</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<h3>My Role</h3>
-								<ul>
-										<li><p>Multimodal interaction design</p></li>
-										<li><p>Android platform development</p></li>
-										<li><p>User test</p></li>
-								</ul>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								
-								<h3>Deliverables</h3>
-								<ul>
-										<li><p><a href="../file/MultimodalAlarm.pdf" data-poptrox="ignore"target="_blank">Project Report</a></p></li>
-										<li><p><a href="https://github.com/Cocoyuan/MultiAlarm" data-poptrox="ignore" target="_blank">Github Repositories</a></p></li>
-								</ul>
-								
-							</article>
-						</div>
-					</section>
 					<section id="process">
-						<header class="major">
-							<h2>Process</h2>
-						</header>
-						<h3>User Behavior Observation</h3>
+						<h5>User Behavior Observation</h5>
 						<p>People’s behaviors will be different during different contexts. For example, when people are running, they may use the alarm to remind them how many time they have run. As our observation, people usually tie their smartphone on their arm. In such situation, when the alarm works, people do not like to use hand to dismiss the clock. Because the alarm is tied in the arm which is inconvenient for them to use hand, also maybe they want to keep running and the hands are not free. Meanwhile, they more like to use voice input to dismiss the clock. Or in that situation, the alarm just rings once which functions as reminding and people do not need to dismiss it.</p>
-						<img src="../images/multialarm/usecase.png" width="100%">
-						
-						<h3>Design Concept</h3>
+						<div class="text-center">
+						<img src="../images/multialarm/usecase.png" width="80%">
+						</div>
+						<h5>Design Concept</h5>
 						<p>Based on our observations, we conclude some activities and environment people use alarm. Our context is devided into two part: environment and activities. Environment includes serious environment, regular environment and noisy environment. And the activities contain cooking, running self- schedule and sleeping. <br>
-							<img src="../images/multialarm/concept.png" width="100%" />
+							<div class="text-center">
+							<img src="../images/multialarm/concept.png" width="80%" />
+						</div>
 						As for the modality, there are input modality and output modality. Input modality includes typing, gesture and voice. Output modality are sound, vibration and view. In the input modality, the gesture is devided into shaking and turning. Shaking means people should shake the smartphone strongly to dismiss the alarm which is a difficult way to dismiss the alarm. While turning means people can dismiss the alarm by turning over the smartphone, which is an easier way to dismiss the alarm. In output modality, sound and vibration has repeated branch. It means the ringing of the alarm can be repeated several times or just work once.</p>
 						
-						<h3>RDF Graph</h3>
+						<h5>RDF Graph</h5>
 						<p>The RDF graph shows the relations between different concepts and different modalities. It could help us to see clearly for following design.</p>
 						<img src="../images/multialarm/overview.png" width="100%" />
-						<h3>Interface Design</h3>
+						<h5>Interface Design</h5>
 						<p>Base on the design concept and RDF graph, we design the multimodal interface of Multi-Alarm.</p>
 						<img src="../images/multialarm/interface_g.png" width="100%" /><br>
 
 						
 					
-						<h3>Implemetation</h3>
+						<h5>Implemetation</h5>
 						<p>There are some main problems we should solved in Android developing:</p>
 							<ol>
 								<li>Using Alarm Manager: This is basic class for building an alarm application, it can change the status of the alarm, and skip the broadcast</li>
@@ -110,27 +95,45 @@
 								<li>Timer: Calculate when does the alarm working by using the Timer</li>
 										
 							</ol>
-						<h3>User Test</h3>
+						<h5>User Test</h5>
 						<p>At present, the function in sleeping modality is working well. Therefore we did some user test for this function. Since in sleeping activity, the truing gesture is disabled, users need to shake smartphone strongly to dismiss alarm. When the alarm rings, user can see the message (remind them to shake smartphone to dismiss alarm) in the interface which is as pictures below. Also, the user testing pictures are as below. After strong shaking the smartphone, the alarm can be dismissed.</p>
-						<img src="../images/multialarm/userTest.png" width="80%" /><br>
+						<img src="../images/multialarm/userTest.png" width="100%" /><br>
 
-						
+						<br>
 
 					</section>
+					<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="bingoelder.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="bonbound.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
 			</div>
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/yuanlyu" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/Cocoyuan" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.instagram.com/alchemist_coco/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:yuan.lyu@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="../images/wechat.jpg" class="icon fa-wechat"><span class="label">Wechat</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 Yuan Lyu</li>
-				</ul>
-			</footer>
-
+		<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+					<a href="images/wechat.jpg"><span  class="fui-wechat"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
 	</body>
 </html>
