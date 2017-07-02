@@ -8,10 +8,64 @@
 		<meta name="keywords" content="" />
 		<script src="../js/jquery.min.js"></script>
   		<script src="../js/bootstrap.min.js"></script>
+  		<script src="../js/soundmanager2-nodebug-jsmin.js"></script>
 		<link rel="stylesheet" href="../css/bootstrap.min.css">  
   		<link rel="stylesheet" href="../css/flat-ui.css">  
   		<link rel="stylesheet" href="../css/highlengstyle.css"> 
-		
+		<script type="text/javascript">
+      soundManager.setup({
+        url: '../images/myobeats/', //swf文件夹的位置
+        onready: function() {
+          soundManager.createSound({
+            id: 'open',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/open.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'wavein',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/wavein.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'waveout',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/waveout.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'fist',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/fist.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'click',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/click.wav' //mp3文件的位置
+          });
+        }
+      });
+      $(document).ready(function () {
+        $('#open_img').click(function () {
+          soundManager.play('open'); //点击按钮可播放
+        });
+        $('#wavein_img').click(function () {
+          soundManager.play('wavein'); //点击按钮可播放
+        });
+        $('#waveout_img').click(function () {
+          soundManager.play('waveout'); //点击按钮可播放
+        });
+        $('#fist_img').click(function () {
+          soundManager.play('fist'); //点击按钮可播放
+        });
+        $('#click_img').click(function () {
+          soundManager.play('click'); //点击按钮可播放
+        });
+      });
+    </script>
 	</head>
 	<body id="top">
 
@@ -66,15 +120,38 @@
 						
 					</section>
 
-					<section id="video">
-						<h5>Intro Video</h5>
-						<iframe id="video" src="https://player.vimeo.com/video/193767956" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</section>
+					
 
 					<section id="process">
 						
-						<h5>Case Study</h5>
-						<!-- <p>In Progressing...</p> -->
+						<h5>How it works</h5>
+						<div class="text-center">
+						<img src="../images/myobeats/howitwork.png" width="100%" />
+						<p><small>listen sound effect by click gesture below</small></p>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-2">
+								<input type='image' id='open_img' src="../images/myobeats/open.png" width="100%"/>
+							
+							</div>
+							<div class="col-sm-2">
+								<input type='image' id='wavein_img' src="../images/myobeats/wavein.png" width="100%"/>
+							
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='waveout_img' src="../images/myobeats/waveout.png" width="100%"/>
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='fist_img' src="../images/myobeats/fist.png" width="100%"/>
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='click_img' src="../images/myobeats/click.png" width="100%"/>
+							</div>
+						</div>
+						
+						<h5>Case Scenario</h5>
+
 						<ol>
 						<li>Gyroscope Data and Bass Effect</li>
 						<p>There is no doubt that every music fan wants a subwoofer (Bass Audio) at home, however, most devices are expensive for them. And also a pair of professional bass is hard to move around when you need an outside performance. Then what about having an electrical bass with gesture on your computer? Make it like bass sound and easy to take with. <br>......</p>
@@ -91,6 +168,10 @@
 						<p>At first, all the participants are taught how to play the instrument and create effect. Then, they are asked to choose a song from library and give a whole performance. They start from the bass effect, then accompany to the music by Myo gesture and finish the whole performance by adding the applause effect. Most of them have good performance with Myo, several people’ gestures can not be recognized by Myo at the first try, but after creating a new portfolio and gesture training it will be better. However, there are still one or two people’ gestures can not be recognized totally. From our observation, they are all extremely thin.</p>
 						<p>From the user test mentioned above, the general performance is good. Most of the participants enjoy the performance and gave good feedback later. Among the three cases study, the applause and bass effects receive better feedback than Myo gesture accompaniment. From the user test, we find out that the gestural recognition isn’t very stable. Since the mechanism of Myo is to measure the muscle tension, we try to minimise the differences by creating profile for each participants. However, the results still vary among different users. The gesture recognitions are not accurate for some participants who are slim in arm.</p>
 						
+					</section>
+					<section id="video">
+						<h5>Intro Video</h5>
+						<iframe id="video" src="https://player.vimeo.com/video/193767956" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</section>
 					<p class="element">
 						<a href="#top">
