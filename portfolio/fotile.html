@@ -13,20 +13,35 @@
   		<link rel="stylesheet" href="../css/font-awesome.min.css">
   		<link rel="stylesheet" href="../css/highlengstyle.css"> 
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-102127012-1', 'auto');
-  ga('send', 'pageview');
-
+function password()
+{
+    var i=1;
+        var passwd=prompt('A password is required to view this page.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
+    while(i<3)
+    {
+        if(passwd=="highlengco")//这是密码
+        {
+        alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
+        break;
+        }
+        i++;
+        var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
+    }
+    if(password!="vip.zan.smarted"&&i==3)
+    {
+        alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
+        location.href="../index.html#contact";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
+    }
+    return "";
+}
+    password();
 </script>
+ 
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header class="portfolio_header" style="background-image:url('../images/psalarm/bg.png'); background-color:#00A1A7">
+			<header class="portfolio_header" style="background-image:url('../images/'); background-color:#00A1A7">
 			<div class="text-center">
 				
 			</div>
@@ -40,23 +55,23 @@
 						<div class="row">
 							<article class="col-sm-3">
 								<p><b>Timeline</b></p>
-								<p><small>Dec.2015 - Jan.2016</small></p>
+								<p><small>Oct.2014 - Jan.2015</small></p>
 							</article>
 							<article class="col-sm-3">
 								<p><b>Location</b></h5>
-								<p><small>Paris, France</small></p>
+								<p><small>Ningbo, China</small></p>
 							</article>
 							<article class="col-sm-3">
-								<p><b>Individual Work</b></p>
-								<p><small>Idea generation</small><br>
-								<small>Hardware&Circuit Design</small><br>
-								<small>Arduino coding</small></p>
+								<p><b>My Role</b></p>
+								<p><small>Interface/Motion Co-design</small><br>
+								<small>Hi-fi Prototyping</small><br>
+								<small>Usability Test</small></p>
 							
 							</article>
 							<article class="col-sm-3">
 								<p><b>Deliverables</b></p>
-								<small><a href="#video" >Intro-Video</a></small><br>
-								<small><a href="https://github.com/Cocoyuan/PhotoSensitiveAlarm" data-poptrox="ignore" target="_blank">Github Repositories</a></small><br>
+								<small>Reddot Design Award 2015</small><br>
+								<small></small><br>
 								
 							</article>
 
@@ -75,18 +90,16 @@
 						
 							<h5>Introduction</h5>
 						
-						<p>This Arduino Photosensitive Alarm plays music when it feels light( of course you can change the light sensor value to control trigger light degree), and it can play 2 different songs by put it vertical or horizontal, also can change speed and volume by using the rotated button, and finally you will got a short snooze by pressing the press switch.</p>
+						<p>I participated usability research of this range hood product as a UX intern at <a href="http://fotileglobal.com/">FOTILE Kitchen Ware Co., Ltd.</a>. Among three months internship, I co-designed interface and motion effect, did hi-fi prototype for several products.  </p>
 					</section>
 					
 
 					<section id="process">
 						
 
-						<h5>Problem</h5>
-						
-						<p>Due to I can hardly hear my alarm every morning and I do want to wake up early than before, maybe wake up by dawn. I’d like to make a Photosensitive Alarm. And this alarm should ring when the light shows. Also, normal alarm rings very boring so I will let it play some music I like to make me delightful in the morning. The song’s rhythm and melody are make by Arduino code.</p>
-					
-						<h5>Function</h5>
+					<p>Microwave W20800P-D2</p>
+					<img src="../images/fotile/microwave.png" width="50%" />
+						<!-- <h5>Function</h5>
 						<ul>
 							<li>Photo sensitive;</li>
 							This alarm should ring when the light shows, which is controlled by changing the photo resistor’s value.
@@ -96,20 +109,12 @@
 							When the press switch was pressed, it will get a short snooze break by 5 seconds
 							<li>Control the speed and volume of music respectively.</li>
 							2 Potentiometers to control the speed and volume respectively.
-						</ul>
+						</ul> -->
 						
-						All the materials I used:
-						<ul>
-						<li>1 Arduino board</li>
-						<li>1 photo resistor</li>
-						<li>1 tilt switch</li>
-						<li>1 press switch</li>
-						<li>2 potentiometers</li>
-						<li>2 10kΩ resistors and 1 220Ω resistor</li>
-						</ul>
+						
 						
 
-						<h5>Circuit Design</h5>
+						<!-- <h5>Circuit Design</h5>
 						
 						<p>Make the improvement of the circuit. The graph shows below:</p>
 						<div class="text-center">
@@ -119,10 +124,11 @@
 						<p>Connect the circuit, then testing, the final photo sensitive alarm looks like the following:</p>
 						<div class="text-center">
 						<img src="../images/psalarm/psalarm.jpg" width="80%" /><br>
-						</div>
+						</div> -->
 						<section id="video">
 						<h5>Final Product</h5>
-						<iframe id="video" src="https://player.vimeo.com/video/159145154" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p>Check the <a href="http://www.fotile.com/hero/yunmofang.html">Chinese Official Website</a></p>
+						
 					</section>
 						<br>
 						<br>
@@ -153,9 +159,11 @@
 					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
 					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
 					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					<a href="https://dribbble.com/cocoyuan" ><span class="fui-dribbble" ></span></a>
 					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
 				</div>
-				<div><p>Design, Development, Resource&copy; 2018 Yuan Lyu</p>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
 				</div>
 				
 	</footer>
