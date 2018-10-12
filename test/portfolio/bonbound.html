@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HighLeng_BonBound</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="../js/jquery.min.js"></script>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/font-awesome.min.css">
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102127012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header class="portfolio_header" style="background-image:url('../images/bonbound/bg.png'); background-color:#EC1461">
+				<div class="header_content" >
+					
+	
+				</div>
+		    
+			</header>
+			
+		<!-- Main -->
+			<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Feb.2016(2 weeks)</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Paris, France</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Interview, Function redesign</small><br>
+								<small>Participatory design</small><br>
+								<small>Prototyping</small></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="#video" data-poptrox="vimeo,800x480" >Video Prototype</a></small><br>
+								<small><a href="../file/IntrospectionInterview.pdf" data-poptrox="ignore" target="_blank">Introspection and Interview Report</a></small><br>
+								<a href="../file/taskUserEveryAdvancedDesign.pdf" data-poptrox="ignore" target="_blank"><small>Task Setting for Participatory Design</small></a>
+								
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+			 <div id="main" class="portfolio_container"> 
+
+				<!-- One -->
+					<section id="About">
+					
+						<h5>Introduction</h5>
+						
+						<p>Bonbound is a project for anvanced design course. It's about <b>redesigning and improvement for the slide-making tools</b> we used everyday such as Keynote, PowerPoint or Google slider. Based on the breakdowns we found out from our own introspection and interviewing from other, generated improvements for previous slide-making tools, considering problems from views of redesign, and setup the video prototype for our project design finally.</p>
+						
+					</section>
+
+
+					<section id="process">
+						
+					
+						<h5>Problem</h5>
+						
+						<p>By finding out which part should we improve for slide-making tools, on the one hand, we did introspection by ourselves, asked about what was the breakdown we met during using these tools last time. On the other hand, we did depth-interview to these tools' users, asked about their breakdowns while using them. We concluded the problems we got from the <a href="../file/IntrospectionInterview.pdf" data-poptrox="ignore" target="_blank">introspection and interviews</a>, found out users' pain shows as below: </p>
+						<img src="../images/bonbound/problem.png" width="100%">
+						<h5>Concept Design</h5>
+						<p>Based on these problems, we decided to design a new boundary object. We conducted the concepts in these three parts, to make our boundary more complete.</p>
+						<p><img src="../images/bonbound/boundary.png" class="col-sm-4" alt="" /></span></p>
+						<ul class="col-sm-8">
+								<li><b>Alignment&Spacing</b></li>
+								 <small>Reify the distance around the element as a new object “boundary”, element not out+other elements can’t go across, safe distance, directly manipulate the distance and keep relative position stable. </small>
+								<li><b>Overlap</b></li>
+								<small>Improve concept, why there is only 2D depth besides width+height. We go across if it is not in the same depth. With this depth property, solve another problem found in interview, overlap, hard to choose the one in the bottom without moving away others.</small>
+								<li><b>Animation</b></li>
+								<small>Add animation on the boundary, add material, effects based on physical principles, special interesting animation in a easier way</small>
+										
+							</ul>
+						<p></p>
+
+						
+						<h5>Justification</h5>
+
+						<p>Firstly, three intrumental design principles are well applied on the design concept, we reified the distance around object as boundary, as you can see below, the blue rectangle represents the boundary that around the text. And polymorphism, this simple boundary can be applied on any objects that you created in slides, text, image, shape and even the group shapes, as what shown in the <a href="#video">video</a>, you could have group shape in one boundary or group shapes with multiple boundaries. Then reuse principle, we allow user to reuse the output of boundary, which means they could copy and paste any boundary they created and give them to other objects.</p>
+						<div class="text-center">
+						<img src="../images/bonbound/justification.png" width="80%" />
+						</div>
+						<p></p>
+
+						<h5>Participatory Design</h5>
+						<div class="row">
+						<p class="col-sm-6">There is no doubt that the mental modal from users might be different with ours, therefore we made a participantory design with users, and we did get some different informations during this period. The tasks setting document is <a href="../file/taskUserEveryAdvancedDesign.pdf">here</a>. 
+							<br>After comparision those with ours, we designed <b>6 interaction points</b> in our boundary, like <b>create boundary, manipulate boundary and set boundary’s property</b>, some of them have different branches. <br>The details we showed in the video prototype.</p>
+						<div class="col-sm-6">
+						<img src="../images/bonbound/pDesign.jpg" width="100%" />
+						</div>
+					</div>
+						<section id="video">
+						<h5>Video Prototype</h5>
+						<iframe id="video" src="https://player.vimeo.com/video/158691357" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+						<p></p>
+						<h5>Walkthrough</h5>
+						<p>We shared our video prototype with other group in walkthrough, got many useful feedbacks, that helped us to add some new interaction points, and also mede us redefine some previous version. </p>
+						<h5>Conclusion</h5>
+						<p>Of course we had a lot of problems during the design period. At the begining, our polymorphism and reuse were not clear. We all used digital platform to show our boundary’s work, but we didn’t realize that may limited our design, made the video more like a marketing video. And we also had disagreements with interaction points, for example, we defined create boundary with different branches, toolbar, rightclick and some other normal ways to trriger, we just design as usual without considering which way is more convenient and easier for user. And our boundary only have the normal porperties, therefore we add the depth to make it solve the overlap more efficiate.</p>
+						<p>For the future work, first we’d like to get some feedback about our video from yours, and of course we need to dicuss more details about our boundary to find more possible functions. Also we found some extreme users(obsessive) from our participantory design, we may design some parts for the exterm cases. Due to our boundary has depth property, we'd like to add some 3D animation effects with our boundary in the future.</p>
+					
+						 
+					
+					</section>
+					<p class="element" >
+						<a href="#top" >
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="multialarm.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="emotiv.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
+					
+				</div>
+
+		<!-- Footer -->
+			<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					<a href="https://dribbble.com/cocoyuan" ><span class="fui-dribbble" ></span></a>
+					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
+	</body>
+</html>

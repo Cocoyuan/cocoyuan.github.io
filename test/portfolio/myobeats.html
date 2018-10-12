@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HighLeng_MyoBeats</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="../js/jquery.min.js"></script>
+  		<script src="../js/bootstrap.min.js"></script>
+  		<script src="../js/soundmanager2-nodebug-jsmin.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/font-awesome.min.css">
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
+  		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102127012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		<script type="text/javascript">
+      soundManager.setup({
+        url: '../images/myobeats/', //swf文件夹的位置
+        onready: function() {
+          soundManager.createSound({
+            id: 'open',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/open.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'wavein',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/wavein.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'waveout',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/waveout.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'fist',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/fist.wav' //mp3文件的位置
+          });
+          soundManager.createSound({
+            id: 'click',
+            autoLoad: true,
+            autoPlay: false,
+            url: '../images/myobeats/click.wav' //mp3文件的位置
+          });
+        }
+      });
+      $(document).ready(function () {
+        $('#open_img').click(function () {
+          soundManager.play('open'); //点击按钮可播放
+        });
+        $('#wavein_img').click(function () {
+          soundManager.play('wavein'); //点击按钮可播放
+        });
+        $('#waveout_img').click(function () {
+          soundManager.play('waveout'); //点击按钮可播放
+        });
+        $('#fist_img').click(function () {
+          soundManager.play('fist'); //点击按钮可播放
+        });
+        $('#click_img').click(function () {
+          soundManager.play('click'); //点击按钮可播放
+        });
+      });
+    </script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header class="portfolio_header" style="background-image:url('../images/myobeats/bg.png'); background-color:#61a4b7">
+			<div class="header_content">
+				
+	
+			</div>
+		    
+		</header>
+
+		<!-- Main -->
+		<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Dec.2015 - Jan.2016</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Paris, France</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Interaction design</small><br>
+								<small>Max/MSP platform implementation</small><br>
+								<small>User test and Exhibition</small></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="#video" data-poptrox="vimeo,800x480" >Intro-Video</a></small><br>
+								<small><a href="../file/Myo-Beats-Gesture-based-Musical-Interaction-in-MaxMSP.pdf" data-poptrox="ignore" target="_blank">Complete Thesis</a></small><br>
+								<small><a href="https://github.com/Cocoyuan/MyoBeat" data-poptrox="ignore"  target="_blank">Github Repositories</a></small><br>
+								
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+		
+			<div class="portfolio_container" style="padding-top:30px">
+				<!-- One -->
+					<section id="About">
+							<h5>Introduction</h5>
+						
+						<p>MyoBeats is an music-interaction design project based on gestures. It allows people to use guestures to control drum and gong beats and to create personalized music, bass effect, and applause effect by wearing myo which is a wireless armband. It is also an innovative interaction for musical control and music-making.</p>
+						
+					</section>
+
+					
+
+					<section id="process">
+						
+						<h5>How it works</h5>
+						<div class="text-center">
+						
+						<img src="../images/myobeats/howitwork.png" width="100%" />
+						<p><small>listen sound effect by click gesture below</small></p>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-2">
+								<input type='image' id='open_img' src="../images/myobeats/open.png" width="100%"/>
+							
+							</div>
+							<div class="col-sm-2">
+								<input type='image' id='wavein_img' src="../images/myobeats/wavein.png" width="100%"/>
+							
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='waveout_img' src="../images/myobeats/waveout.png" width="100%"/>
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='fist_img' src="../images/myobeats/fist.png" width="100%"/>
+							</div>
+							<div class="col-sm-2">
+							<input type='image' id='click_img' src="../images/myobeats/click.png" width="100%"/>
+							</div>
+						</div>
+						
+						<h5>Case Scenario</h5>
+
+						<ol>
+						<li>Gyroscope Data and Bass Effect</li>
+						<p>There is no doubt that every music fan wants a subwoofer (Bass Audio) at home, however, most devices are expensive for them. And also a pair of professional bass is hard to move around when you need an outside performance. Then what about having an electrical bass with gesture on your computer? Make it like bass sound and easy to take with. <br>......</p>
+						<li>Myo Gestures and Drum Beats</li>
+						<p>The normal music accompaniments are usually toneless and always in the same way, what should we do if we want to sing with accompany more fun or make it in our own way? Since Myo can recognize different gestures, we want to generate various drum beats with different Myo gestures as accompaniments of singing. Myo has 5 gestures recognition: there are fist, wave-in, wave-out, finger-spread and double-tap. We designed 5 sound effects with these gestures respectively. For the fist gesture, we added the gong sound effect. For the wave-in and waveout, we designed a pair of drum beats. For the finger-spread, we designed a shorter sound effect. For the double-tap gesture, we added the longer sound effect instead to make it more abundant. In total, we designed two pairs of sound effects with comparison style, one last is single. Every sound effect is easy to recognize therefore user can know clearly which gesture are they doing and whether if they did right or not. Combining all of these sounds, users can easily create a piece of wonderful drum beats that belong to their own style.</p>
+						<li>Volume Control and Applause Effect</li> 
+						<p>Nowadays, more and more people like to go to karaoke, partly because they could have better performance and gain good feeling of themselves when they are in Karaoke. The atmosphere there is quite hot, loud cheers and applauses rang out continuously. Which makes people really enjoyable. So the atmosphere of playing music is quite important to the people who like music. However, if it is possible to create this atmosphere with our computers at home? Even when you are alone with no audience, computer can interact with you. <br>......</p>
+						</ol>
+						<p></p>
+						<section id="video">
+						<h5>Intro Video</h5>
+						<iframe id="video" src="https://player.vimeo.com/video/193767956" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+						<h5>User Test</h5>
+						<p>At first, all the participants are taught how to play the instrument and create effect. Then, they are asked to choose a song from library and give a whole performance. They start from the bass effect, then accompany to the music by Myo gesture and finish the whole performance by adding the applause effect. Most of them have good performance with Myo, several people’ gestures can not be recognized by Myo at the first try, but after creating a new portfolio and gesture training it will be better. However, there are still one or two people’ gestures can not be recognized totally. From our observation, they are all extremely thin.</p>
+						<p>From the user test mentioned above, the general performance is good. Most of the participants enjoy the performance and gave good feedback later. Among the three cases study, the applause and bass effects receive better feedback than Myo gesture accompaniment. From the user test, we find out that the gestural recognition isn’t very stable. Since the mechanism of Myo is to measure the muscle tension, we try to minimise the differences by creating profile for each participants. However, the results still vary among different users. The gesture recognitions are not accurate for some participants who are slim in arm.</p>
+						
+					</section>
+					
+					<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="emotiv.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="ghostman.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
+
+					</div>
+		<!-- Footer -->
+		<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					<a href="https://dribbble.com/cocoyuan" ><span class="fui-dribbble" ></span></a>
+					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/Cocoyuan.lv"><span class="fui-facebook"></span></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2017 Yuan Lyu</p>
+				</div>
+				
+	</footer>
+
+	</body>
+</html>
