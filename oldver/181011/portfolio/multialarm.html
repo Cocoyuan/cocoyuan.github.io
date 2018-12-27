@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HighLeng_MultiAlarm</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="../js/jquery.min.js"></script>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/font-awesome.min.css">
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102127012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header class="portfolio_header" style="background-image:url('../images/multialarm/bg.png'); background-color:#485567">
+			<div class="text-center" >
+			</div>
+		    
+		</header>
+
+		<!-- Main -->
+		<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Nov.2015 - Feb.2016</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Paris, France</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Multimodal interaction design</small><br>
+								<small>Animation design</small><br>
+								<small>Android platform development</small><br>
+								<small>User test</small><br></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="../file/MultimodalAlarm.pdf" data-poptrox="ignore"target="_blank">Project Report</a></small><br>
+								<small><a href="https://github.com/Cocoyuan/MultiAlarm" data-poptrox="ignore" target="_blank">Github Repositories</a></small>
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+		
+			<div class="portfolio_container" style="padding-top:30px">
+
+				<!-- One -->
+					<section id="About">
+							<h5>Introduction</h5>
+						
+						<p>Multimodal Alarm (Multi-Alarm), which is a uncommon Android clock application considers about environment and people’s activities. Based on different concepts, the multi-alarm provides different input and ourput modalities, to make user feel more friendly and more convenient by using this. </p>
+						
+					</section>
+					<section id="process">
+						<h5>User Behavior Observation</h5>
+						<p>People’s behaviors will be different during different contexts. For example, when people are running, they may use the alarm to remind them how many time they have run. As our observation, people usually tie their smartphone on their arm. In such situation, when the alarm works, people do not like to use hand to dismiss the clock. Because the alarm is tied in the arm which is inconvenient for them to use hand, also maybe they want to keep running and the hands are not free. Meanwhile, they more like to use voice input to dismiss the clock. Or in that situation, the alarm just rings once which functions as reminding and people do not need to dismiss it.</p>
+						<div class="text-center">
+						<img src="../images/multialarm/usecase.png" width="80%">
+						</div>
+						<h5>Design Concept</h5>
+						<p>Based on our observations, we conclude some activities and environment people use alarm. Our context is devided into two part: environment and activities. Environment includes serious environment, regular environment and noisy environment. And the activities contain cooking, running self- schedule and sleeping. <br>
+							<div class="text-center">
+							<img src="../images/multialarm/concept.png" width="80%" />
+						</div>
+						As for the modality, there are input modality and output modality. Input modality includes typing, gesture and voice. Output modality are sound, vibration and view. In the input modality, the gesture is devided into shaking and turning. Shaking means people should shake the smartphone strongly to dismiss the alarm which is a difficult way to dismiss the alarm. While turning means people can dismiss the alarm by turning over the smartphone, which is an easier way to dismiss the alarm. In output modality, sound and vibration has repeated branch. It means the ringing of the alarm can be repeated several times or just work once.</p>
+						
+						<h5>RDF Graph</h5>
+						<p>The RDF graph shows the relations between different concepts and different modalities. It could help us to see clearly for following design.</p>
+						<img src="../images/multialarm/overview.png" width="100%" />
+						<h5>Interface Design</h5>
+						<p>Base on the design concept and RDF graph, we design the multimodal interface of Multi-Alarm.</p>
+						<img src="../images/multialarm/interface_g.png" width="100%" /><br>
+						<h5>Animation</h5>
+						<p>This is my on-going individual training task for learning <a href="http://principleformac.com/index.html">Principle</a> by myself, please stay tuned for my new work...  </p>
+						<div class="text-center">
+						<img src="../images/multialarm/animation.gif" width="60%"/>
+						</div>
+
+						
+					
+						<h5>Implemetation</h5>
+						<p>There are some main problems we should solved in Android developing:</p>
+							<ol>
+								<li>Using Alarm Manager: This is basic class for building an alarm application, it can change the status of the alarm, and skip the broadcast</li>
+								<li>Using Broadcast: Open the activity by broadcast, realize the shake function</li>
+								<li>Using Vibrator and Playing sounds: Change notification style between vibrate and ring through Media Player and Vibrator class</li>
+								<li>Using Sensor Manager: In this app, we need Sensor Manager to open the accelerated sensor, then catch the degree of phone shaking to judge the value of the wake up</li>
+								<li>Timer: Calculate when does the alarm working by using the Timer</li>
+										
+							</ol>
+						<h5>Usability Test</h5>
+						<p>At present, the function in sleeping modality is working well. Therefore we did some usability test for this function. Since in sleeping activity, the truing gesture is disabled, users need to shake smartphone strongly to dismiss alarm. When the alarm rings, user can see the message (remind them to shake smartphone to dismiss alarm) in the interface which is as pictures below. Also, the user testing pictures are as below. After strong shaking the smartphone, the alarm can be dismissed.</p>
+						<div class="text-center">
+						<img src="../images/multialarm/userTest.jpg" width="80%" /><br>
+					</div>
+						<br>
+
+					</section>
+					<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="bingoelder.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="bonbound.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
+			</div>
+		<!-- Footer -->
+		<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2018 Yuan Lyu</p>
+				</div>
+				
+	</footer>
+	</body>
+</html>

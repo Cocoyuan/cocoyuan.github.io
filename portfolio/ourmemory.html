@@ -3,38 +3,42 @@
 <html>
 	<head>
 		<title>HighLeng_OurMemory</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<script src="../js/jquery.min.js"></script>
-  		<script src="../js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="../css/bootstrap.min.css">  
-  		<link rel="stylesheet" href="../css/flat-ui.css">  
-  		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  		<!-- <link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/font-awesome.min.css"> -->
+  		<link rel="stylesheet" href="../css/main.css" />
   		<link rel="stylesheet" href="../css/highlengstyle.css"> 
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-102127012-1', 'auto');
-  ga('send', 'pageview');
+		  ga('create', 'UA-102127012-1', 'auto');
+		  ga('send', 'pageview');
 
-</script>
+		</script>
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-		<header class="portfolio_header" style="background-image:url('../images/ourmemory/bg.png'); background-color:#132234">
-			<div class="header_content">
+		<header class="portfolio_header" style=" background-color:#132234">
+			<div class="text-center">
+				<img src="../images/ourmemory/bg.png">
 			</div>
 		    
 		</header>
 
 		<!-- Main -->
 		<div style="background-color:#ecf0f1">
-			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+			<div class="portfolio_container" style="padding-top:30px">
 				<section id="role">
 						<div class="row">
 							<article class="col-sm-3">
@@ -69,7 +73,7 @@
 				<!-- One -->
 				
 					<section id="About">
-							<h5>Introduction</h5>
+							<h3>Introduction</h3>
 						
 						<p>OurMemory is a web-based activity souvenir album generator, which make the process of resource sharing, gathering and sorting more easily. It is a multi-user real-time collaborative platform implemented by Node.js and express. Our goal is to help participants to share the feelings and resources along with the activity, in order to generate a more vivid album.</p>
 						
@@ -78,9 +82,9 @@
 					<section id="process">
 					
 
-						<h5>Motivation</h5>
+						<h3>Motivation</h3>
 						<p>We all have experienced some memorable group activities, such as volunteer works, academic field trips, supporting education in remote area, summer schools, etc. During the activities, which usually last several days, participants always like to take photos and videos to record the special moments with others by using their smartphones or cameras. When the activities are finished, people prefer to make a souvenir album including text, photos and even videos to keep as a souvenir.</p>
-						<h5>Problem</h5>
+						<h3>Problem</h3>
 						<ul>
 							<li>Time-consuming</li>
 							The gathering process can be time-consuming to wait for all the resources being uploaded from all the participants.
@@ -91,8 +95,13 @@
 							<li>Emotions are hard to record afterwards</li>
 							We all know the fact that the emotions at a certain moment, such as exciting, upsetting and feeling of happiness are hard to repeat and record afterwards.
 						</ul>
-						<h5>Function</h5>
-						<img src="../images/ourmemory/main_function.png" width="100%" />
+						<div class="content-block">
+
+						<h3>Function</h3>
+						<div class="text-center">
+						<img src="../images/ourmemory/main_function.png" width="80%" />
+						</div>
+						</div>
 						<!-- <ol> -->
 										<!-- <li>Multi-userReal-timeOnlineChatting:</li>
 										The system allows multi-users to enter the server at the same time and chat online. -->
@@ -103,11 +112,17 @@
 										<!-- <li>Albums Downloading:</li>
 										Users can download albums by pressing the download button. The a file with all the uploaded resources can be downloaded. -->
 								<!-- 	</ol> -->
-						<h5>Sitemap Overview</h5>
-						<img src="../images/ourmemory/sitemap.png" width="100%" />
-						<h5>Interface Design</h5>
+						<div class="content-block">
+						<h3>Sitemap Overview</h3>
+						<div class="text-center">
+						<img src="../images/ourmemory/sitemap.png" width="90%" />
+						</div>
+						</div>
+						<div class="content-block">
+						<h3>Interface Design</h3>
 						<img src="../images/ourmemory/UI.png" width="100%" />
-						<h5>Implement</h5>
+						</div>
+						<h3>Implement</h3>
 						<div class="row">
 						<div class="col-sm-6">
 						<p>Architecture<br>
@@ -120,41 +135,73 @@
 						</div>
 						</div>
 
-						<h5>Redesign is coming...</h5>
+						<h3>Redesign is coming...</h3>
 						<p>When we were doing this groupware project, the main issue we considered about was technical one, so our interface design was limited by my programming skill to be honest. There were so many un-friendly design points in this web-interface, for example, there was no way to get back to index from album overview. Moreover, the main idea of this web product should be <b>let users co-browse/edit during the whole sharing process</b> but not only chatting part. Therefore, I would like to do a re-design of this web product and it would also be a good chance to practice my UI design skills.</p>
 						<div style="height:30px"></div>
 					</section>
-					<p class="element">
-						<a href="#top">
-							<span class="fui-triangle-up"></span>
+					<p class="element " style="color:#4DA693">
+						<a href="#top" class="icon style1 fa-sort-up">
+							<span class="label">Top</span>
 						</a>
 						&nbsp;	
-						<a href="../index.html#portfolio">
-							<span class="fui-home"></span>
+						<a href="../index.html#portfolio" class="icon style1 fa-home">
+							<span class="label">Home</span>
 						</a>
 						&nbsp;
-						<a href="ghostman.html">
-							<span class="fui-arrow-left"></span>
+						<a href="ghostman.html" class="icon style1 fa-caret-left">
+							<span class="label">Previous</span>
 						</a>
 						&nbsp;
-						<a href="psalarm.html">
-							<span class="fui-arrow-right"></span>
+						<a href="psalarm.html" class="icon fa-caret-right">
+							<span class="label" >Next</span>
 						</a>
 					</p>
 				</div>
 		<!-- Footer -->
-		<footer>
-		<div class="">
-					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
-					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
-					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
-					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
-					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+
+
+		<div id="wrapper">		
+			<footer id="footer" >
+				<div class="inner">
+					<section>
+						<h2>Get in touch</h2>
+						<p>WANT TO TALK? Want to know more about a project? Interested in any cooperation? Or maybe you have a suitable job opportunity for me? Feel free to drop me a line even if you just want to say hi!</p>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field half">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="primary" /></li>
+							</ul>
+						</form>
+					</section>
+					
+					<section>								
+						<h2>Follow</h2>
+						<ul class="icons">
+							<li><a href="mailto:yuan.lyu@hotmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="tel:+4915733262956" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+							<li><a href="../images/wechat.jpg" class="icon style2 fa-wechat"><span class="label">Wechat</span></a></li>
+							<li><a href="https://www.linkedin.com/in/yuanlyu/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Cocoyuan" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				<!-- <div><p>Design, Development, Resource&copy; 2018 Yuan Lyu</p>
+				</div> -->
+					<ul class="copyright">
+						<li>Design, Development, Resource &copy; 2018 Yuan Lyu</li>
+					</ul>			
 				</div>
-				<div><p>Design, Development, Resource&copy; 2018 Yuan Lyu</p>
-				</div>
-				
-	</footer>
+			</footer>
+		</div>
 
 	</body>
 </html>

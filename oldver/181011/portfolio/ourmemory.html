@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HighLeng_OurMemory</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="../js/jquery.min.js"></script>
+  		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">  
+  		<link rel="stylesheet" href="../css/flat-ui.css">  
+  		<link rel="stylesheet" href="../css/font-awesome.min.css">
+  		<link rel="stylesheet" href="../css/highlengstyle.css"> 
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102127012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+		<header class="portfolio_header" style="background-image:url('../images/ourmemory/bg.png'); background-color:#132234">
+			<div class="header_content">
+			</div>
+		    
+		</header>
+
+		<!-- Main -->
+		<div style="background-color:#ecf0f1">
+			<div class="portfolio_container" style="padding-top:30px;padding-bottom:30px">
+				<section id="role">
+						<div class="row">
+							<article class="col-sm-3">
+								<p><b>Timeline</b></p>
+								<p><small>Dec.2015 - Jan.2016</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>Location</b></p>
+								<p><small>Paris, France</small></p>
+							</article>
+							<article class="col-sm-3">
+								<p><b>My Role</b></p>
+								<p><small>Concept design</small><br>
+								<small>Web design</small><br>
+								<small>Node.js implementation</small></p>
+							
+							</article>
+							<article class="col-sm-3">
+								<p><b>Deliverables</b></p>
+								<small><a href="../file/GroupwareReport.pdf"  data-poptrox="ignore" target="_blank">Project Report</a></small><br>
+								<small><a href="https://github.com/Cocoyuan/ourmemory"  data-poptrox="ignore" target="_blank">Github Repositories</a></small><br>
+								
+							</article>
+
+						</div>
+					</section>
+				</div>
+			</div>
+		
+			<div class="portfolio_container" style="padding-top:30px">
+
+				<!-- One -->
+				
+					<section id="About">
+							<h5>Introduction</h5>
+						
+						<p>OurMemory is a web-based activity souvenir album generator, which make the process of resource sharing, gathering and sorting more easily. It is a multi-user real-time collaborative platform implemented by Node.js and express. Our goal is to help participants to share the feelings and resources along with the activity, in order to generate a more vivid album.</p>
+						
+					</section>
+					
+					<section id="process">
+					
+
+						<h5>Motivation</h5>
+						<p>We all have experienced some memorable group activities, such as volunteer works, academic field trips, supporting education in remote area, summer schools, etc. During the activities, which usually last several days, participants always like to take photos and videos to record the special moments with others by using their smartphones or cameras. When the activities are finished, people prefer to make a souvenir album including text, photos and even videos to keep as a souvenir.</p>
+						<h5>Problem</h5>
+						<ul>
+							<li>Time-consuming</li>
+							The gathering process can be time-consuming to wait for all the resources being uploaded from all the participants.
+							<li>Resources need to be re-ordered based on time-line</li>
+							After everyone uploaded, one person is assigned to re-order the resources based on the time-line.
+							<li>Some resources are omitted</li>
+							It can be always hard to all of the photos being taken afterwards. Thus, some resources are easily omitted.
+							<li>Emotions are hard to record afterwards</li>
+							We all know the fact that the emotions at a certain moment, such as exciting, upsetting and feeling of happiness are hard to repeat and record afterwards.
+						</ul>
+						<h5>Function</h5>
+						<img src="../images/ourmemory/main_function.png" width="100%" />
+						<!-- <ol> -->
+										<!-- <li>Multi-userReal-timeOnlineChatting:</li>
+										The system allows multi-users to enter the server at the same time and chat online. -->
+										<!-- <li>Photos Uploading:</li>
+										Users can upload photos from local device selecting from folder or dragging directly into pages. After being uploaded, the photo can be seen from the interface. The photos uploaded are saved in a pre-defined folder. The file name is generated automatically including the exact uploading time. -->
+										<!-- <li>Albums Generating:</li>
+										Albums are generated base on the time-line. The photos are ordered by their name generated after uploaded. -->
+										<!-- <li>Albums Downloading:</li>
+										Users can download albums by pressing the download button. The a file with all the uploaded resources can be downloaded. -->
+								<!-- 	</ol> -->
+						<h5>Sitemap Overview</h5>
+						<img src="../images/ourmemory/sitemap.png" width="100%" />
+						<h5>Interface Design</h5>
+						<img src="../images/ourmemory/UI.png" width="100%" />
+						<h5>Implement</h5>
+						<div class="row">
+						<div class="col-sm-6">
+						<p>Architecture<br>
+							Back-end: Node.js+Express <br>
+ Front-end: HTML & CSS in bootstraps framework </p>
+						<p>During the whole MVP implementation process, we have run into many difficulties. The biggest one is realising the upload function in the same page. The form POST methods and socket methods have been tried. The upload function can be realised when the file is uploaded onto a different page. Moreover, in order to avoid the override problem, we generate the file name by adding the exact uploading time. </p>
+						</div>
+						<div class="col-sm-6">
+						<img src="../images/ourmemory/screenshot.jpg" width="100%" />
+						</div>
+						</div>
+
+						<h5>Redesign is coming...</h5>
+						<p>When we were doing this groupware project, the main issue we considered about was technical one, so our interface design was limited by my programming skill to be honest. There were so many un-friendly design points in this web-interface, for example, there was no way to get back to index from album overview. Moreover, the main idea of this web product should be <b>let users co-browse/edit during the whole sharing process</b> but not only chatting part. Therefore, I would like to do a re-design of this web product and it would also be a good chance to practice my UI design skills.</p>
+						<div style="height:30px"></div>
+					</section>
+					<p class="element">
+						<a href="#top">
+							<span class="fui-triangle-up"></span>
+						</a>
+						&nbsp;	
+						<a href="../index.html#portfolio">
+							<span class="fui-home"></span>
+						</a>
+						&nbsp;
+						<a href="ghostman.html">
+							<span class="fui-arrow-left"></span>
+						</a>
+						&nbsp;
+						<a href="psalarm.html">
+							<span class="fui-arrow-right"></span>
+						</a>
+					</p>
+				</div>
+		<!-- Footer -->
+		<footer>
+		<div class="">
+					<a href="https://www.linkedin.com/in/yuanlyu" ><span class="fui-linkedin" ></span></a>
+					<a href="mailto:yuan.lyu@hotmail.com"><span class="fui-mail"></span></a>
+					<a href="https://github.com/Cocoyuan"><span class="fui-github"></span></a>
+					<a href="https://www.instagram.com/alchemist_coco/"><span class="fui-instagram"></span></a>
+					<a href="images/wechat.jpg"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+				</div>
+				<div><p>Design, Development, Resource&copy; 2018 Yuan Lyu</p>
+				</div>
+				
+	</footer>
+
+	</body>
+</html>
