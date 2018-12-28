@@ -3,10 +3,6 @@
  	margin-bottom:0px;
  	margin-top:-50px;
  	color: #585858;
- 	/*background-image: url('../images/bg.jpg');*/
- 	/*
- 	background-size: 100%,120% ;
- 	background-repeat:no-repeat;*/
 	margin-right:auto;
  	margin-left:auto
  	}
@@ -65,8 +61,6 @@
  	background-position:center;
  	background-repeat:no-repeat;
  	background-size:100%;
- 	/*
- 	background-image: url('../images/bg.jpg');*/
  	height: 400px;
 }
 	@media (max-width:578px){
@@ -140,7 +134,7 @@
  		padding-left:55px;
  		padding-top: 30px;
  		margin-right:auto;
- 		margin-left:auto
+ 		margin-left:auto;
  	}
  	@media (max-width:578px){
  		.portfolio_container{
@@ -498,8 +492,16 @@ figure.effect-sadie:hover p {
 .highleng-section{
 	/*padding-top: 50px;
 	margin-top: 50px;*/
-	padding-bottom: 50px
+	padding-bottom: 50px;
+	color: #585858;
 }
+.highleng-section a{
+ 		color: #585858;
+ 	}
+ 	.highleng-section a:hover{
+ 		border-bottom-color: transparent;
+ 		text-decoration:none;
+ 	}
 .highleng-row{
 	padding-bottom: 10px
 }
@@ -530,3 +532,4 @@ figure.effect-sadie:hover p {
 #resume a:hover{
 	text-decoration:none;
 }
+
