@@ -16,37 +16,37 @@
   		<link rel="stylesheet" href="../css/main.css" />
   		<link rel="stylesheet" href="../css/highlengstyle.css">
 		<script>
-			function password()
-			{
-			    var i=1;
-			        var passwd=prompt('A password is required to view this page.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
-			    while(i<3)
-			    {
-			        if(passwd=="highlengco")//这是密码
-			        {
-			        alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
-			        break;
-			        }
-			        i++;
-			        var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
-			    }
-			    if(password!="vip.zan.smarted"&&i==3)
-			    {
-			        alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
-			        location.href="../index.html#contact";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
-			    }
-			    return "";
-			}
-			    password();
+			// function password()
+			// {
+			//     var i=1;
+			//         var passwd=prompt('A password is required to view this page.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
+			//     while(i<3)
+			//     {
+			//         if(passwd=="highlengco")//这是密码
+			//         {
+			//         alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
+			//         break;
+			//         }
+			//         i++;
+			//         var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
+			//     }
+			//     if(password!="vip.zan.smarted"&&i==3)
+			//     {
+			//         alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
+			//         location.href="../index.html#contact";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
+			//     }
+			//     return "";
+			// }
+			//     password();
 		</script>
  
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header class="portfolio_header" style="background-image:url('../images/'); background-color:#00A1A7">
+			<header class="portfolio_header" style="background-color:#fff">
 			<div class="text-center">
-				<img src="">
+				<img src="../images/fotile/bg.png">
 			</div>
 		    
 		</header>
@@ -73,7 +73,8 @@
 							</article>
 							<article class="col-sm-3">
 								<p><b>Deliverables</b></p>
-								<small><a href="http://www.fotile.com/hero/yunmofang.html">Product Official Website</a></small><br>
+								<small><a target="_blank" href="http://www.fotile.com/hero/yunmofang.html">Product Official Website</a></small><br>
+								<small><a target="_blank" href="../file/RangeHood.html">Hi-Fi Prototype Sample</a></small><br>
 								<small><a href="../file/fotile_reference.pdf">Reference Letter</a></small><br>
 								
 							</article>
@@ -93,44 +94,92 @@
 						
 						<h3>Introduction</h3>
 						
-						<p>I participated usability research of this range hood product as a UX intern at <a href="http://fotileglobal.com/">FOTILE Kitchen Ware Co., Ltd.</a>. Among three months internship, I co-designed interface and motion effect, did hi-fi prototype for several products.  </p>
+						<p>I participated usability research of this range hood product as a UX intern at <a target="_blank" href="http://fotileglobal.com/">FOTILE Kitchen Ware Co., Ltd.</a>. Among three months internship, I co-designed interface and motion effect, implemented <b>hi-fi prototype</b> for several products individually by Adobe Flash and Axure. The product included rangehood, microwave, steam box and oven. Besides, I also assisted the <b>usability test</b> of those products, learnt how to prepare the test and analysis the test results.</p>
 					</section>
+
+					<section class="content-block">
+						<h3>RangeHood EM10T</h3>
+						<div class="row">
+							<div class="col-sm-4"><img src="../images/fotile/rangehood.jpg" width="100%"></div>
+							<div class="col-sm-8">
+						<p>The prototype implementation took around 2-3 weeks, the following iteration was also done by me. The prototype was designed within actual size, configured with touch screen and used for usability test before the product launched in the market(release date in earlier 2016).<br>
+
+							P.s. Please scale the window to 50% to get better browsing experience;)<br>	</p>
+						<a target="_blank" href="">Hi-Fi Prototype Sample</a>
+						
+					
+						</div>
+						<!-- <iframe src="../file/RangeHood.html" style="display:inline-flex; width:640px; height:480px">test</iframe> -->
+						</div>
+						</section>
 					
 
-					<section id="process">
+					<section id="UI Motion Design">
 						
 
-					<p>Microwave W20800P-D2</p>
-					<img src="../images/fotile/microwave.png" width="50%" />
-						<!-- <h3>Function</h3>
-						<ul>
-							<li>Photo sensitive;</li>
-							This alarm should ring when the light shows, which is controlled by changing the photo resistor’s value.
-							<li>2 different songs can be chose from the alarm;</li>
-							The tilt switch to change between different music, when the status of tilt switch changes, the song will change.
-							<li>A short snooze break provided;</li>
-							When the press switch was pressed, it will get a short snooze break by 5 seconds
-							<li>Control the speed and volume of music respectively.</li>
-							2 Potentiometers to control the speed and volume respectively.
-						</ul> -->
-						
-						
-						
-
-						<!-- <h3>Circuit Design</h3>
-						
-						<p>Make the improvement of the circuit. The graph shows below:</p>
-						<div class="text-center">
-						<img src="../images/psalarm/circuit.jpg" width="50%" /><br>
+					<h3>UI Motion Design & MockUp</h3>
+					<h4>Oven</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven1.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven2.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven3.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven4.png" width="100%" />
+						</div>
 					</div>
-						<h3>Hardware Design</h3>
-						<p>Connect the circuit, then testing, the final photo sensitive alarm looks like the following:</p>
-						<div class="text-center">
-						<img src="../images/psalarm/psalarm.jpg" width="80%" /><br>
-						</div> -->
-						<section id="video">
-						<h3>Final Product</h3>
-						<p>Check the <a href="http://www.fotile.com/hero/yunmofang.html">Chinese Official Website</a></p>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven5.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven6.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/oven7.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+						</div>
+					</div>
+					<h4>Microwave</h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="../images/fotile/microwave1.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/microwave2.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/microwave3.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+						</div>
+					</div>
+					<h4>Steam Box </h4>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="../images/fotile/steam1.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/steam2.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+							<img src="../images/fotile/steam3.png" width="100%" />
+						</div>
+						<div class="col-sm-3">
+						</div>
+					</div>
+					<a href="#portfolio" class="button scrolly border-free">Download Axure File</a>
+						
+						
+					<section id="video" class="content-block">
+						<hr>
+						<h4>It's been a pleasure that I could work with my lovely team, learn and grow my professions, as well as impact the real consumer goods to customers in their kitchen!</h4>
 						
 					</section>
 						<br>
