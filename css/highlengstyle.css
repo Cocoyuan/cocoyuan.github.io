@@ -536,3 +536,8 @@ figure.effect-sadie:hover p {
 #resume a:hover{
 	text-decoration:none;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ 	filter: invert(100%);
+ }
