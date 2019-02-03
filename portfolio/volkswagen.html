@@ -16,7 +16,7 @@
   		<link rel="shortcut icon" href="../images/logo_ly.png" type="image/x-icon" />
   	<link rel="stylesheet" href="../css/main.css" />
   	<link rel="stylesheet" href="../css/highlengstyle.css"> 
-		<script>
+		 <script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -25,30 +25,30 @@
 		  ga('create', 'UA-102127012-1', 'auto');
 		  ga('send', 'pageview');
 
-		  function password()
-			{
-			    var i=1;
-			        var passwd=prompt('A password is required to view this page.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
-			    while(i<3)
-			    {
-			        if(passwd=="highlengco")//这是密码
-			        {
-			        alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
-			        break;
-			        }
-			        i++;
-			        var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
-			    }
-			    if(password!="vip.zan.smarted"&&i==3)
-			    {
-			        alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
-			        location.href="../index.html#contact";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
-			    }
-			    return "";
-			}
-			    password();
+		 //  function password()
+			// {
+			//     var i=1;
+			//         var passwd=prompt('A password is required to view this page.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
+			//     while(i<3)
+			//     {
+			//         if(passwd=="highlengco")//这是密码
+			//         {
+			//         alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
+			//         break;
+			//         }
+			//         i++;
+			//         var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
+			//     }
+			//     if(password!="vip.zan.smarted"&&i==3)
+			//     {
+			//         alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
+			//         location.href="../index.html#contact";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
+			//     }
+			//     return "";
+			// }
+			//     password();
 
-		</script>
+		 </script>
 	</head>
 	<body id="top">
 
@@ -76,12 +76,13 @@
 								</article>
 								<article class="col-sm-3">
 									<p><b>My Role</b></p>
-									<p><small>UX/UI Design Intern</small></p>
+									<p><small>UX/UI Design Intern</small></p><br>
 								
 								</article>
 								<article class="col-sm-3">
 									<p><b>Deliverables</b></p>
-									<a href="https://fleetrate.co"  target="_blank"><small>Product Website</small></a><br>
+									<small>Wireframe, Mockup, etc</small><br>
+									<small>Product Website</small><br>
 								</article>
 
 							</div>
@@ -100,7 +101,7 @@
 			    <div class="text-left" > 
 			    	<section id="Brief">
 			    		<h3>Brief</h3>
-			      		<p>With Smart Mobility and Transport team at Volkswagen Nutzfahrzeuge, my responsibility during the internship mainly aiming at UX/UI iteration for the web-based product, which is called <b>Fleetrate</b>: doing customer research, master the UX process, design web UI and implement the landing page, collaborate with product manager, exteral designers and developers from the agency. We got funded <b>€ 1,000,000</b> from the Board Committee of Volkswagen Digital Transfromation by end of 2018, and our Fleetrate vehicle will be launched on the street beginning of Febuary, 2019. Besides, I also take part in the branding design for team and product sometimes.</p>
+			      		<p>With Smart Mobility and Transport team at Volkswagen Nutzfahrzeuge, my responsibility during the internship mainly aiming at UX/UI iteration for the web-based product: doing customer research, master the UX process, iterate and implement the web UI as well asthe landing page, collaborate with product manager, exteral designers and developers from the agency. We got funded € 1,000,000 from the Board Committee of Volkswagen Digital Transfromation by end of 2018, and our vehicles will be launched on the street beginning of Febuary, 2019. Besides, I also take part in the branding design for team and product sometimes.</p>
 			      		<h4>Please understand I have to fuzz some pictures to meet the confidiential request. Thanks❤</h4>
 			    	</section>
 
@@ -111,7 +112,7 @@
 					    		<img src="../images/volkswagen/fleetrate.png" width="100%">
 					    	</div>
 					    	<div class="col-sm-8">
-			      				<p>Fleetrate is a Light Commercial Vehicle(LCV) subscription service, which offers its commercial customers via digital channels vehicles with short-term availability and terminability.</p>
+			      				<p>Our product provides Light Commercial Vehicle(LCV) subscription service, which offers its commercial customers via digital channels vehicles with short-term availability and terminability.</p>
 					      		<div class=" d-none d-lg-block">
 						      		<div class="row">
 						      			<div class="col-md-3 col-6">
@@ -228,11 +229,9 @@
 
 			      	<section id="landingpage">
 			    		<h3>Landing Page</h3>
-			    		<p>The landing page was created by me and product manger together, on<b> webflow with embedded HTML/CSS</b>, HubSpot tracking, and other setups. Before we released the redesigned version, we received the positive feedback from the user test. And since we released our new landing page at beginning of January, 2019, we already received 30-50 leads from pontential customers.</p>
-			    		<a href="http://fleetrate.co" class="button scrolly border-free" target="_blank">Go to Landing page</a>
+			    		<p>The landing page was created by me and product manger together, on<b> webflow with embedded HTML/CSS</b>, HubSpot tracking, and other setups. Before we released the redesigned version, we received the positive feedback from the user test. And since we released our new landing page at beginning of January, 2019, we already received 30-50 leads from pontential customers in two weeks.</p>
+			    		<!-- <a href="http://fleetrate.co" class="button scrolly border-free" target="_blank">Go to Landing page</a> -->
 			    		
-			    		<br>
-			    		<br>
 			    	</section>
 
 			      	<section id="Wireframe">
