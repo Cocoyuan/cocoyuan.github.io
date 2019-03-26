@@ -1,3 +1,4 @@
+
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
@@ -469,6 +470,7 @@ input, select, textarea {
 		.row.gtr-25 {
 			margin-top: 0;
 			margin-left: -0.5em;
+			margin-right: -0.5em;
 		}
 
 			.row.gtr-25 > * {
@@ -486,6 +488,7 @@ input, select, textarea {
 		.row.gtr-50 {
 			margin-top: 0;
 			margin-left: -1em;
+			margin-right: -1em;
 		}
 
 			.row.gtr-50 > * {
@@ -695,6 +698,7 @@ input, select, textarea {
 				.row.gtr-0 {
 					margin-top: 0;
 					margin-left: 0em;
+					margin-right: 0em;
 				}
 
 					.row.gtr-0 > * {
