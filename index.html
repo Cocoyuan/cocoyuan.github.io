@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>HignLeng_Land | Yuan Lyu's Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="keywords" content="portfolio, yuan lyu, Coco lyu, user experience, interaction design">
+  <meta charset="utf-8"><!-- 
+  <meta name="keywords" content="portfolio, yuan lyu, Coco lyu, user experience, interaction design"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 
   <link rel="stylesheet" href="css/font-awesome.min.css"> -->
@@ -38,6 +38,28 @@
 	    async defer>
   </script>
   <script>
+  		function password()
+			{
+			    var i=1;
+			        var passwd=prompt('A password is required to view this site.','Please input the password');//这是输入密码的提示语，可以改为你想要显示的内容，比如本站地址之类的
+			    while(i<3)
+			    {
+			        if(passwd=="HighLengCo")//这是密码
+			        {
+			        alert('Thanks for your interest! Please feel free to leave your feedback;D');//这是输入正确后的提示，可以改为自己想要的提示语
+			        break;
+			        }
+			        i++;
+			        var passwd=prompt('Sorry your code was wrong, please try it again:\nYou can try '+(4-i)+'more times');
+			    }
+			    if(password!="vip.zan.smarted"&&i==3)
+			    {
+			        alert('Sorry, we cannot find the matching. Please contact the author to correct the code.');
+			        location.href="https://www.linkedin.com/in/yuanlyu/";//这是密码输入错误超过3次后转到的错误页面，也可设为别的页面
+			    }
+			    return "";
+			}
+			    password();
 
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
